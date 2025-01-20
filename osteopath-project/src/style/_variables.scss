@@ -1,18 +1,17 @@
 // _variables.scss
-$background-color: #EAE5DE;
-$primary-text-color: #985B3C;
-$secondary-text-color: #351707;
-$second-background-color: #221B19;
-$third-background-color: #FFFFFF;
-$paragraph-color-light: #ACACAC;
+$background-color: #F1DECD;
+$primary-text-color: #AC7858;
+$hover-text-color:  #8F6D5C;
+$secondary-text-color: #F1DECD;
+$second-background-color: #AC7858;
+$third-background-color: #8F6D5C;
 
-$primary-font-family: 'Questrial';
+$primary-font-family: 'Roboto';
+$secondary-font-family: 'Poppins';
 $primary-font-size: 3.5rem;
 $title-color: white;
-$text-font-weight: 100;
+$text-font-weight: 600;
 
-$font-tan-angleton: 'Satisy', serif;
-$font-aileron: 'Lora', sans-serif;
 
 // Buttons
 
@@ -20,22 +19,3 @@ $buttons-font-size: 12px;
 $buttons-text-color: white;
 $buttons-background-color:#985B3C;
 $buttons-width: 20%;
-
-
-// Carousel
-
-$carousel-background-color: transparent;
-$carousel-border: none;
-$carousel-position: absolute;
-$carousel-display: flex;
-$carousel-font-size: 30px;
-$carousel-cursor: pointer;
-$carousel-color: white;
-
-
-// Buttons responsive
-
-$buttons-responsive-font-size: 12px;
-$buttons-responsive-text-color: white;
-$buttons-responsive-background-color:#985B3C;
-$buttons-responsive-width: 50%;
