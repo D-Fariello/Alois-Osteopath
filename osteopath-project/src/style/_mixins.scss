@@ -1,12 +1,14 @@
 @use "variables";
 
-// @mixin button-style {
-//   font-size: variables.$buttons-font-size;
-//   color: variables.$buttons-text-color;
-//   background-color: variables.$buttons-background-color;
-//   border: none;
-//   width: variables.$buttons-width;
-// }
+@mixin button-style {
+  font-size: variables.$buttons-font-size;
+  color: variables.$buttons-text-color;
+  background-color: variables.$buttons-background-color;
+  border: none;
+  font-weight: variables.$buttons-font-weight;
+  border-radius: variables.$buttons-border-radius;
+  padding: variables.$buttons-padding;
+}
 
 // @mixin title-style {
 //   font-family: variables.$primary-font-family;

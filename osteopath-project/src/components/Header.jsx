@@ -16,13 +16,13 @@ const Header = () => {
       <nav>
         <ul className="nav-bar">
           <li>
-            <a href="#acceuil">Acceuil</a>
+            <a href="#acceuil">Accueil</a>
           </li>
           <li>
             <a href="#a-propos">À propos</a>
           </li>
           <li>
-            <a href="#tarif">Tarif</a>
+            <a href="#tarif">Tarifs</a>
           </li>
           <li>
             <a href="#avis">Avis</a>
