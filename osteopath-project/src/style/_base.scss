@@ -38,3 +38,60 @@ ul.nav-bar {
     }
 }
 }
+
+
+////////////// Section 1 /////////////
+
+
+.hero-image-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: variables.$background-color;
+
+
+img.hero-image {
+    display: flex;
+    width: 87%;
+    height: 600px;
+    border-radius: 20px 20px;
+    justify-content: center;
+    align-items: center;
+    filter: brightness(50%);
+}
+}
+
+.hero-text {
+    display: flex;
+    position: absolute;
+    top: 20%;
+    margin-left: 13%;
+    flex-direction: column;
+    align-items: flex-start;
+
+    h1, p{
+        color: variables.$secondary-text-color;
+        font-family: variables.$secondary-font-family;
+        font-size: 35px;
+        font-weight: 700;
+    }
+
+    .hero-buttons {
+        display: flex;
+        gap: 20px;
+        flex-direction: row;
+   
+
+    button.btn.btn-primary, .btn.btn-secondary  {
+        border: none;
+        border-radius: 50px 50px;
+        padding: 22px;
+        color: variables.$secondary-text-color;
+        font-size: 15px;
+        font-weight: 700;
+        background-color:variables.$third-background-color;
+        cursor: pointer;
+    }
+}
+}
