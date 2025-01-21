@@ -10,6 +10,7 @@ import {
   FaChild,
 } from "react-icons/fa";
 import Header from "./Header";
+import FAQSection from "./FAQSection";
 
 const Hero = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -153,6 +154,9 @@ const Hero = () => {
             <span className="additional-text">Du bébé à l’adulte</span>
           </div>
         </section>
+
+        {/* FAQ Section  */}
+        <FAQSection />
       </section>
     </div>
   );

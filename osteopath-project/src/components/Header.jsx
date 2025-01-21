@@ -14,7 +14,7 @@ const Header = ({
       <div className="logo-Image">
         <NavLink to="/" className="main-nav-logo">
           <img
-            src="./images/poleOsteo.png"
+            src="/images/poleOsteo.png"
             alt="Logo Pole Osteo"
             className="main-nav-logo-image"
           />
@@ -35,7 +35,7 @@ const Header = ({
             <a href="#blog">Blog</a>
           </li>
           <li>
-            <a href="#faq">FAQ</a>
+            <a href="#faq-section">FAQ</a>
           </li>
           <li>
             <a href="#a-propos">À propos</a>
