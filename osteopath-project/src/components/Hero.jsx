@@ -77,7 +77,11 @@ const Hero = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <button className="btn btn-primary">
+                  <button
+                    className={`btn btn-primary ${
+                      slide.buttonText === "Nous appeler" ? "button-red" : ""
+                    }`}
+                  >
                     {slide.buttonText}
                   </button>
                 </a>
