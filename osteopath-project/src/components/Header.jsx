@@ -5,6 +5,7 @@ const Header = ({
   currentSlide = 0,
   slideTexts = [],
   buttonColor = "white",
+  buttonLink,
 }) => {
   const displayText = slideTexts[currentSlide] || "Loading..";
 
@@ -50,7 +51,9 @@ const Header = ({
           backgroundColor: buttonColor,
         }}
       >
-        {displayText}
+        <a href={buttonLink} target="_blank" rel="noopener noreferrer">
+          {displayText}
+        </a>
       </div>
     </header>
   );

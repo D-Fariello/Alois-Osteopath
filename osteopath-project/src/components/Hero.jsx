@@ -21,6 +21,7 @@ const Hero = () => {
       buttonText: "Prendre Rendez-Vous",
       buttonHeader: "Prendre rendez-vous 7/7 8H-23H",
       backgroundColor: "#b7cec3",
+      buttonLink: "https://www.doctolib.fr/osteopathe/nice/alois-ruetsch",
     },
     {
       title: "Consultation en urgence",
@@ -34,6 +35,7 @@ const Hero = () => {
       buttonText: "Nous appeler",
       buttonHeader: "Sans rendez-vous 7/7 8H-23H",
       backgroundColor: "#d3606a",
+      buttonLink: "https://www.doctolib.fr/osteopathe/nice/alois-ruetsch",
     },
   ];
 
@@ -51,6 +53,7 @@ const Hero = () => {
         currentSlide={currentSlide}
         slideTexts={slides.map((slide) => slide.buttonHeader)}
         buttonColor={slides[currentSlide].backgroundColor}
+        buttonLink={slides[currentSlide].buttonLink}
       />
 
       {/* Section 1 */}
@@ -69,15 +72,15 @@ const Hero = () => {
               >
                 <h1 className="hero-title">{slide.title}</h1>
                 <p className="hero-subtitle">{slide.text}</p>
-                <button
-                  className={`btn btn-primary ${
-                    slides[currentSlide].buttonText === "Nous appeler"
-                      ? "button-red"
-                      : ""
-                  }`}
+                <a
+                  href={slide.buttonLink}
+                  target="_blank"
+                  rel="noopener noreferrer"
                 >
-                  {slides[currentSlide].buttonText}
-                </button>
+                  <button className="btn btn-primary">
+                    {slide.buttonText}
+                  </button>
+                </a>
                 <div className="carousel-dots">
                   {slides.map((_, dotIndex) => (
                     <span

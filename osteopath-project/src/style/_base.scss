@@ -56,12 +56,19 @@ header.header {
       }
   }
 
-  .button-nav {
+  .button-nav, .button-header {
     @include mixins.button-style;
     background-color: #b7cec3;
     color: white;
     padding: 5px 20px;
     font-size: 13px;
+  }
+  
+  
+  .button-nav a {
+    text-decoration: none;  
+    color: white; 
+    display: inline-block;
   }
 }
 
