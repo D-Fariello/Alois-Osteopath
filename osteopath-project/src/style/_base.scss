@@ -24,6 +24,10 @@ header.header {
   z-index: 1000;
   padding: 20px 0;
 
+  img.main-nav-logo-image {
+    height: 50px;
+}
+
   ul.nav-bar {
     display: flex;
     list-style: none;
@@ -48,6 +52,14 @@ header.header {
     .logo-Image img {
         max-height: 50px; 
       }
+  }
+
+  .button-nav {
+    @include mixins.button-style;
+    margin-left: 2%;
+    background-color: #b7cec3;
+    color: white;
+    padding: 5px 20px;
   }
 }
 

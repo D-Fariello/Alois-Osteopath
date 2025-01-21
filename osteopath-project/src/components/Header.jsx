@@ -1,14 +1,20 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 
-const Header = () => {
+const Header = ({
+  currentSlide = 0,
+  slideTexts = [],
+  buttonColor = "white",
+}) => {
+  const displayText = slideTexts[currentSlide] || "Loading..";
+
   return (
     <header className="header">
       <div className="logo-Image">
         <NavLink to="/" className="main-nav-logo">
           <img
-            src="./images/LogoColored.png"
-            alt="Logo web"
+            src="./images/poleOsteo.png"
+            alt="Logo Pole Osteo"
             className="main-nav-logo-image"
           />
         </NavLink>
@@ -38,6 +44,14 @@ const Header = () => {
           </li>
         </ul>
       </nav>
+      <div
+        className="button-nav"
+        style={{
+          backgroundColor: buttonColor,
+        }}
+      >
+        {displayText}
+      </div>
     </header>
   );
 };
