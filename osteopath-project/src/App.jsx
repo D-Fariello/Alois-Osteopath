@@ -9,8 +9,7 @@ const App = () => {
   return (
     <Router>
       <div className="app">
-        {/* Header */}
-        <Header />
+        {/* <Header /> */}
 
         {/* Page Content */}
         <Routes>
