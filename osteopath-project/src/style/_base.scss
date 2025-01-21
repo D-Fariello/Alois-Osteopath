@@ -46,7 +46,6 @@ header.header {
     }
     :hover {
       color: variables.$hover-text-color;
-      padding-bottom: 10px;
     }
 
     .logo-Image img {
@@ -206,7 +205,7 @@ button.btn.btn-primary {
   height: 20px;
   background-color: variables.$cards-backgroud-color;
   padding: 25px;
-  gap: 50px;
+  gap: 100px;
 
   .info-item {
     display: flex;
@@ -228,7 +227,7 @@ section.additional-info {
   align-items: center;
   justify-content: center;
   margin-top: 5%;
-  gap: 60px;
+  gap: 80px;
 }
 
 .additional-item {

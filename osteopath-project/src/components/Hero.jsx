@@ -17,7 +17,14 @@ const Hero = () => {
   const slides = [
     {
       title: "Pôle Ostéo",
-      text: "Soulagez vos douleurs avec l’ostéopathie – Un suivi personnalisé pour chaque étape de votre bien-être, ouvert 7j/7 à Nice.",
+      text: (
+        <>
+          Soulagez vos douleurs avec l’ostéopathie – Un suivi personnalisé pour
+          chaque étape de votre bien-être
+          <br />
+          ouvert 7j/7 à Nice
+        </>
+      ),
       buttonText: "Prendre Rendez-Vous",
       buttonHeader: "Prendre rendez-vous 7/7 8H-23H",
       backgroundColor: "#b7cec3",
