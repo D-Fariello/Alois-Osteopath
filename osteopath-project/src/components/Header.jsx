@@ -16,22 +16,25 @@ const Header = () => {
       <nav>
         <ul className="nav-bar">
           <li>
-            <a href="#acceuil">Accueil</a>
+            <a href="#specialites">Spécialités</a>
+          </li>
+          <li>
+            <a href="#ateliers">Ateliers</a>
+          </li>
+          <li>
+            <a href="#equipe">Equipe</a>
+          </li>
+          <li>
+            <a href="#blog">Blog</a>
+          </li>
+          <li>
+            <a href="#faq">FAQ</a>
           </li>
           <li>
             <a href="#a-propos">À propos</a>
           </li>
           <li>
-            <a href="#tarif">Tarifs</a>
-          </li>
-          <li>
-            <a href="#avis">Avis</a>
-          </li>
-          <li>
-            <a href="#contact">Contact</a>
-          </li>
-          <li>
-            <a href="#specialites">Specialités</a>
+            <a href="#contact"> Contact</a>
           </li>
         </ul>
       </nav>

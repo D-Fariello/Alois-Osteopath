@@ -17,162 +17,158 @@ header.header {
   justify-content: center;
   align-items: center;
   background-color: variables.$background-color;
+  position: fixed;
+  top: 0; 
+  left: 0; 
+  width: 100%;
+  z-index: 1000;
+  padding: 20px 0;
 
   ul.nav-bar {
     display: flex;
     list-style: none;
-    gap: 30px;
+    gap: 15px;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     text-decoration: none;
-    padding-top: 25px;
-    padding-bottom: 25px;
+  
 
     a {
       font-family: variables.$secondary-font-family;
       text-decoration: none;
-      color: variables.$second-background-color;
-      font-weight: 600;
-      font-size: 18px;
+      color: variables.$primary-text-color;
+      font-size: 15px;
     }
     :hover {
       color: variables.$hover-text-color;
-      border-bottom: 2px solid;
       padding-bottom: 10px;
     }
+
+    .logo-Image img {
+        max-height: 50px; 
+      }
   }
 }
 
-////////////// Section 1 /////////////
+////////////// Carrousel /////////////
 
-.hero-image-container {
+
+
+///////// TEXT /////////
+
+
+.hero-title{
+  color: variables.$secondary-text-color;
+  font-family: "Inter";
+  font-weight: 400;
+}
+
+.hero-subtitle{
+  color: variables.$secondary-text-color;
+  font-family: "Inter";
+  margin: 2% 5%;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+}
+
+
+////////////// Carrousel Image //////////////
+
+
+.carousel-container {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  position: relative;
   display: flex;
-  flex-direction: row;
+  justify-content: center;
+  top: 50%;
+  height: 350px;
+}
+
+.carousel-slide {
+  width: 90%; 
+  margin: 0 5%;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.5s ease, visibility 0.5s ease, background-color 0.5s ease;
+  display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: variables.$background-color;
-  padding-bottom: 3%;
-
-  img.hero-image {
-    display: flex;
-    width: 87%;
-    height: 600px;
-    border-radius: 20px 20px;
-    justify-content: center;
-    align-items: center;
-    filter: brightness(50%);
-  }
-}
-
-.hero-text {
-  display: flex;
+  padding: 50px;
+  box-sizing: border-box;
+  text-align: center;
   position: absolute;
-  top: 25%;
-  margin-left: 13%;
-  flex-direction: column;
-  align-items: flex-start;
-
-  h1,
-  p {
-    color: variables.$secondary-text-color;
-    font-family: variables.$secondary-font-family;
-    font-size: 35px;
-    font-weight: 700;
-  }
-
-  .hero-buttons {
-    display: flex;
-    gap: 20px;
-    flex-direction: row;
-
-    button.btn.btn-primary,
-    .btn.btn-secondary {
-      @include mixins.button-style;
-      cursor: pointer;
-    }
-  }
+  left: 0;
+  top: 40px;
+  height: 320px;
 }
 
-////////////// Section 2 /////////////
+/* Slide active */
+.carousel-slide.active {
+  opacity: 1;
+  visibility: visible;
+}
 
-section.cards-section {
-  background-color: variables.$background-color;
-  margin-top: 0;
+/* Slide inactive */
+.carousel-slide.inactive {
+  opacity: 0;
+  visibility: hidden;
+}
+
+/// Arrows ///
+
+.carousel-arrow {
+  position: absolute;
+  top: 60%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  background-color: transparent;
+  padding: 10px 15px;
+  cursor: pointer;
+  z-index: 1000;
+}
+
+.carousel-arrow.left {
+  left: 5%;
+}
+
+.carousel-arrow.right {
+  right: 5%;
+}
+
+/// Dots ///
+.carousel-dots {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-
-  .cards-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-    margin-left: 2%;
-    margin-right: 2%;
-  }
-
-  .section-title-h2 {
-    display: flex;
-    justify-content: center;
-    color: variables.$second-background-color;
-    font-size: 40px;
-    margin-left: 10%;
-    text-align: center;
-    margin-right: 10%;
+  position: absolute;
+  bottom: 5%;
 }
 
-.section-subtitle{
-    display: flex;
-    justify-content: center;
-    color: variables.$second-background-color;
-    margin-left: 10%;
-    text-align: center;
-    margin-right: 10%;
-    font-weight: 100;
-    font-size: 30px;
+.dot {
+  height: 8px;
+  width: 8px;
+  margin: 0 5px;
+  background-color: lightgray;
+  border-radius: 50%;
+  display: inline-block;
+  cursor: pointer;
 }
 
-  .card {
-    display: flex;
-    border-radius: 20px 20px;
-    background-color: variables.$third-background-color;
-    opacity: 1.5;
-    height: 300px;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: flex-start;
-    padding: 15px;
-
-    h3,
-    p.section-details {
-      color: variables.$secondary-text-color;
-      display: flex;
-      margin: 5px 10px;
-    }
-
-    svg.svg-inline--fa.fa-user-doctor {
-      display: flex;
-      align-items: center;
-      flex-direction: row;
-      justify-content: center;
-      align-content: center;
-      margin: 10px;
-      font-size: 50px;
-      color: variables.$secondary-text-color;
-    }
-  }
-
-  button.btn.btn-primary {
-    @include mixins.button-style;
-    cursor: pointer;
-    margin-top: 4%;
-    margin-bottom: 4%;
-  }
+.dot.active {
+  background-color: #fbf9f9;
 }
 
-////////////// Section 3 /////////////
 
+////////////// Buttons //////////////
+
+
+button.btn.btn-primary {
+  @include mixins.button-style;
+  margin-top: 30px;
+}

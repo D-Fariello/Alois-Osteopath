@@ -1,53 +1,72 @@
-import React from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faUserDoctor } from "@fortawesome/free-solid-svg-icons";
+import React, { useState } from "react";
 
 const Hero = () => {
+  const [currentSlide, setCurrentSlide] = useState(0);
+
+  const slides = [
+    {
+      title: "Pôle Ostéo",
+      text: "Soulagez vos douleurs avec l’ostéopathie – Un suivi personnalisé pour chaque étape de votre bien-être, ouvert 7j/7 à Nice.",
+      buttonText: "Prendre Rendez-Vous",
+      backgroundColor: "#b7cec3",
+    },
+    {
+      title: "Consultation en urgence",
+      text: "Besoin d'une consultation immédiate ? Nous vous accueillons sans rendez-vous Nice, 22 rue Gounod",
+      buttonText: "Prendre Rendez-Vous",
+      backgroundColor: "#d3606a",
+    },
+  ];
+
+  const handleNext = () => {
+    setCurrentSlide((prev) => (prev + 1) % slides.length);
+  };
+
+  const handlePrev = () => {
+    setCurrentSlide((prev) => (prev - 1 + slides.length) % slides.length);
+  };
+
   return (
     <div>
-      {/* Sezione 1 */}
+      {/* Section 1 */}
       <section className="hero-section">
-        <div className="hero-image-container">
-          <img
-            src="./images/doctor-studio.avif"
-            alt="Hero"
-            className="hero-image"
-          />
-        </div>
-        <div className="hero-text">
-          <h1>Aloïs Ruetsch</h1>
-          <p className="section-one-paragraph">Osteopathe Nice</p>
-          <div className="hero-buttons">
-            <button className="btn btn-primary"> Prendre Rendez-Vous</button>
-            <button className="btn btn-secondary">Numero de tel</button>
-          </div>
-        </div>
-      </section>
-
-      {/* Sezione 2 */}
-      <section className="cards-section">
-        <h2 className="section-title-h2">
-          {" "}
-          Vous ressentez des douleurs ou des tensions difficiles à gérer ?
-        </h2>
-        <p className="section-subtitle">
-          Tout au long de votre vie et selon votre parcours, vous pouvez
-          rencontrer différentes douleurs ou problématiques:
-        </p>
-        <div className="cards-container">
-          {Array(6)
-            .fill()
-            .map((_, index) => (
-              <div className="card" key={index}>
-                <FontAwesomeIcon icon={faUserDoctor} />
-                <h3>Card Title {index + 1}</h3>
-                <p className="section-details">
-                  Brief description of the feature or product.
-                </p>
+        <div className="carousel-container">
+          <div className="carousel-slides">
+            {slides.map((slide, index) => (
+              <div
+                className={`carousel-slide ${
+                  currentSlide === index ? "active" : ""
+                }`}
+                key={index}
+                style={{
+                  backgroundColor: slide.backgroundColor,
+                }}
+              >
+                <h1 className="hero-title">{slide.title}</h1>
+                <p className="hero-subtitle">{slide.text}</p>
+                <button className="btn btn-primary">{slide.buttonText}</button>
+                <div className="carousel-dots">
+                  {slides.map((_, dotIndex) => (
+                    <span
+                      key={dotIndex}
+                      className={`dot ${
+                        currentSlide === dotIndex ? "active" : ""
+                      }`}
+                      onClick={() => setCurrentSlide(dotIndex)}
+                    ></span>
+                  ))}
+                </div>
               </div>
             ))}
+          </div>
+          {/* Arrows */}
+          <button className="carousel-arrow left" onClick={handlePrev}>
+            ◀
+          </button>
+          <button className="carousel-arrow right" onClick={handleNext}>
+            ▶
+          </button>
         </div>
-        <button className="btn btn-primary">See All Features</button>
       </section>
     </div>
   );

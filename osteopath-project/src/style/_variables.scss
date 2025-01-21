@@ -1,23 +1,27 @@
 // _variables.scss
-$background-color: #F1DECD;
-$primary-text-color: #AC7858;
-$hover-text-color:  #8F6D5C;
-$secondary-text-color: #F1DECD;
-$second-background-color: #AC7858;
-$third-background-color: #8F6D5C;
+$background-color: white;
+$primary-text-color: black;
+$hover-text-color:  #b7cec3;
+$secondary-text-color: white;
+$second-background-color: #b7cec3;
+$carousell-background-color: #d3606a;
 
-$primary-font-family: 'Roboto';
-$secondary-font-family: 'Poppins';
+$primary-font-family: 'Inter';
+$secondary-font-family: 'Inter';
 $primary-font-size: 3.5rem;
 $title-color: white;
-$text-font-weight: 600;
 
 
 // Buttons
 
-$buttons-text-color: #F1DECD;
-$buttons-background-color:#8F6D5C;
+$buttons-text-color: black;
+$buttons-background-color:#fbf9f9;
 $buttons-font-size: 15px;
-$buttons-font-weight: 700;
+$buttons-font-weight: 100;
 $buttons-border-radius: 50px 50px;
-$buttons-padding: 22px;
+$buttons-padding: 5px 30px;
+$buttons-width: 45%;
+
+// Cards
+
+$cards-backgroud-color: #fbf9f9;
