@@ -8,6 +8,8 @@
   font-weight: variables.$buttons-font-weight;
   border-radius: variables.$buttons-border-radius;
   padding: variables.$buttons-padding;
+  cursor: variables.$buttons-cursor;
+  font-family: variables.$buttons-font-family;
 }
 
 // @mixin title-style {

@@ -1,4 +1,14 @@
 import React, { useState } from "react";
+import {
+  FaStar,
+  FaRegClock,
+  FaEuroSign,
+  FaCalendarAlt,
+  FaCertificate,
+  FaHandsHelping,
+  FaClock,
+  FaChild,
+} from "react-icons/fa";
 import Header from "./Header";
 
 const Hero = () => {
@@ -14,8 +24,14 @@ const Hero = () => {
     },
     {
       title: "Consultation en urgence",
-      text: "Besoin d'une consultation immédiate ? Nous vous accueillons sans rendez-vous Nice, 22 rue Gounod",
-      buttonText: "Prendre Rendez-Vous",
+      text: (
+        <>
+          Besoin d'une consultation immédiate ? Nous vous accueillons sans
+          rendez-vous <br />
+          Nice, 22 rue Gounod
+        </>
+      ),
+      buttonText: "Nous appeler",
       buttonHeader: "Sans rendez-vous 7/7 8H-23H",
       backgroundColor: "#d3606a",
     },
@@ -53,7 +69,15 @@ const Hero = () => {
               >
                 <h1 className="hero-title">{slide.title}</h1>
                 <p className="hero-subtitle">{slide.text}</p>
-                <button className="btn btn-primary">{slide.buttonText}</button>
+                <button
+                  className={`btn btn-primary ${
+                    slides[currentSlide].buttonText === "Nous appeler"
+                      ? "button-red"
+                      : ""
+                  }`}
+                >
+                  {slides[currentSlide].buttonText}
+                </button>
                 <div className="carousel-dots">
                   {slides.map((_, dotIndex) => (
                     <span
@@ -76,6 +100,45 @@ const Hero = () => {
             ▶
           </button>
         </div>
+        {/* Info Bar */}
+        <div className="general-info">
+          <div className="info-item">
+            <FaStar className="info-icon" />
+            <span>4.9/5 avis Google</span>
+          </div>
+          <div className="info-item">
+            <FaEuroSign className="info-icon" />
+            <span>Remboursement mutuelle</span>
+          </div>
+          <div className="info-item">
+            <FaCalendarAlt className="info-icon" />
+            <span>Avec ou sans rendez-vous</span>
+          </div>
+          <div className="info-item">
+            <FaRegClock className="info-icon" />
+            <span>8h à 23h</span>
+          </div>
+        </div>
+
+        {/* Icons Section  */}
+        <section className="additional-info">
+          <div className="additional-item">
+            <FaCertificate className="degree-icon" />
+            <span className="additional-text">Diplôme D.O. agréé</span>
+          </div>
+          <div className="additional-item">
+            <FaHandsHelping className="heart-icon" />
+            <span className="additional-text">Prise en charge rapide</span>
+          </div>
+          <div className="additional-item">
+            <FaClock className="timer-icon" />
+            <span className="additional-text">Fiabilité et bienveillance</span>
+          </div>
+          <div className="additional-item">
+            <FaChild className="baby-icon" />
+            <span className="additional-text">Du bébé à l’adulte</span>
+          </div>
+        </section>
       </section>
     </div>
   );

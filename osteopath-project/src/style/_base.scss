@@ -161,7 +161,7 @@ header.header {
   display: flex;
   justify-content: center;
   position: absolute;
-  bottom: 5%;
+  bottom: 7%;
 }
 
 .dot {
@@ -185,4 +185,74 @@ header.header {
 button.btn.btn-primary {
   @include mixins.button-style;
   margin-top: 30px;
+}
+
+.button-red {
+  color: #d3606a !important;
+}
+
+
+//////////////// Banner Carrousel ////////////
+
+
+.general-info {
+  width: 100%;
+  box-sizing: border-box;
+  max-width: 900px;
+  margin: 0 auto;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  top: 50%;
+  height: 20px;
+  background-color: variables.$cards-backgroud-color;
+  padding: 25px;
+  gap: 50px;
+
+  .info-item {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    color: variables.$icons-color;
+    font-family: variables.$primary-font-family;
+    font-size: 15px;
+}
+}
+
+
+////////// Additional info  Section //////////
+
+
+section.additional-info {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-top: 5%;
+  gap: 60px;
+}
+
+.additional-item {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+}
+
+svg.degree-icon, .heart-icon, .timer-icon, .baby-icon  {
+  border: none;
+  background-color: variables.$cards-backgroud-color;
+  padding: 60px;
+  border-radius: 50%;
+  color: variables.$second-background-color;
+  font-size: 40px;
+  margin-bottom: 15px;
+}
+
+.additional-text{
+  font-family: variables.$primary-font-family;
+  color: black;
+  font-size: 15px;
+  margin-bottom: 15px;
 }
