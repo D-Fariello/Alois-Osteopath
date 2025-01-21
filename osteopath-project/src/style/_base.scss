@@ -36,6 +36,8 @@ header.header {
     justify-content: center;
     align-items: center;
     text-decoration: none;
+    margin-right: 28px;
+    margin-left: -20px;
   
 
     a {
@@ -50,16 +52,16 @@ header.header {
     }
 
     .logo-Image img {
-        max-height: 50px; 
+        max-height: 45px; 
       }
   }
 
   .button-nav {
     @include mixins.button-style;
-    margin-left: 2%;
     background-color: #b7cec3;
     color: white;
     padding: 5px 20px;
+    font-size: 13px;
   }
 }
 
