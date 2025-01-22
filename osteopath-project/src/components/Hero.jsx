@@ -139,19 +139,35 @@ const Hero = () => {
         {/* Icons Section  */}
         <section className="additional-info">
           <div className="additional-item">
-            <FaCertificate className="degree-icon" />
+            <img
+              src="/icones/hero-icones/PNG/Diplome.png"
+              alt="degree"
+              className="degree-icon"
+            />
             <span className="additional-text">Diplôme D.O. agréé</span>
           </div>
           <div className="additional-item">
-            <FaHandsHelping className="heart-icon" />
+            <img
+              src="/icones/hero-icones/PNG/Chrono.png"
+              alt="Bienveillance"
+              className="heart-icon"
+            />
             <span className="additional-text">Prise en charge rapide</span>
           </div>
           <div className="additional-item">
-            <FaClock className="timer-icon" />
+            <img
+              src="/icones/hero-icones/PNG/Bienveillance.png"
+              alt="timer"
+              className="timer-icon"
+            />
             <span className="additional-text">Fiabilité et bienveillance</span>
           </div>
           <div className="additional-item">
-            <FaChild className="baby-icon" />
+            <img
+              src="/icones/hero-icones/PNG/TrancheAge.png"
+              alt="Tranche d'age"
+              className="baby-icon"
+            />
             <span className="additional-text">Du bébé à l’adulte</span>
           </div>
         </section>
