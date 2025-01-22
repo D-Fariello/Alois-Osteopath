@@ -389,8 +389,14 @@ form {
 
 @media (max-width: 768px) {
   header.header {
-    flex-direction: column;
+    display: flex;
+    flex-direction: row;
     align-items: center;
+    justify-content: space-between;
+
+    .button-nav, .button-header {
+      display: none;
+  }
 
     .burger-menu {
       display: flex;
@@ -408,18 +414,6 @@ form {
         background-color: variables.$primary-text-color;
         margin: 4px 0;
         transition: 0.3s;
-      }
-
-      &.active span:nth-child(1) {
-        transform: rotate(45deg) translate(5px, 5px);
-      }
-
-      &.active span:nth-child(2) {
-        opacity: 0;
-      }
-
-      &.active span:nth-child(3) {
-        transform: rotate(-45deg) translate(5px, -5px);
       }
     }
 
