@@ -334,16 +334,6 @@ form {
   flex-direction: column;
   flex-wrap: wrap;
   align-content: center;
-  align-items: center;
-  justify-content: center;
-
-
-  .names,
-  .contacts, .message {
-    display: flex;
-    flex-direction: row;
-    gap: 50px;
-  }
 
   .input-last-name,
   .input-name,
@@ -358,13 +348,7 @@ form {
     padding-top: 10px;
     padding-left: 20px;
     padding-bottom: 10px;
-    padding-right: 60px;
     margin-top: 15px;
-  }
-
-  .input-email,
-  .phone-number {
-    padding-right: 50px;
   }
 
   .message {
@@ -383,6 +367,12 @@ form {
     background-color: transparent;
   }
 
+  .form-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
   .submit-button{
     @include mixins.button-style;
     background-color: #b7cec3;
@@ -392,4 +382,5 @@ form {
     font-size: 13px;
     margin-bottom: 40px;
   }
+}
 }

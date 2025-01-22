@@ -19,7 +19,7 @@ const ContactForm = () => {
   };
 
   return (
-    <div className="contact-form">
+    <div className="contact-form" id="contact">
       <h3 className="contact-us-title"> Formulaire de contact </h3>
       <Form method="post">
         <div className="names">
@@ -85,10 +85,9 @@ const ContactForm = () => {
             autoComplete="off"
           />
         </div>
-        <div className="button-container">
+        <div className="form-button">
           <button className="submit-button" type="submit">
-            {" "}
-            Envoyer{" "}
+            Envoyer
           </button>
         </div>
       </Form>
