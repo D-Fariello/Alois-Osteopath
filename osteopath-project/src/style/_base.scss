@@ -297,6 +297,7 @@ h2.faq-title {
     gap: 20px;
     width: 900px;
     font-family: variables.$primary-font-family;
+    font-size: variables.$buttons-font-size;
   }
 
   .faq-answer {
@@ -313,6 +314,7 @@ h2.faq-title {
     width: 900px;
     text-align: center;
     font-family: variables.$primary-font-family;
+    font-size: variables.$buttons-font-size;
   }
 
   svg {
@@ -322,3 +324,21 @@ h2.faq-title {
 }
 
 
+
+////////// Contact Form Section //////////
+
+h3.title-contact-form {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background: border-box;
+  background-color: variables.$second-background-color;
+  font-family: variables.$primary-font-family;
+  font-weight: 500;
+  padding: 20px;
+  color: white;
+  margin-bottom: 0px;
+  margin-top: 0;
+  font-size: 1.5rem;
+}
