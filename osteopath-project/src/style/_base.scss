@@ -337,13 +337,9 @@ form {
   align-items: flex-start;
   justify-content: center;
 
-  label {
-    display: flex;
-    flex-direction: row;
-  }
 
   .names,
-  .contacts {
+  .contacts, .message {
     display: flex;
     flex-direction: row;
     gap: 50px;
@@ -352,7 +348,7 @@ form {
   .input-last-name,
   .input-name,
   .input-email,
-  .phone-number {
+  .phone-number, .message{
     display: flex;
     gap: 30px;
     background-color: variables.$cards-backgroud-color;
@@ -366,15 +362,16 @@ form {
     margin-top: 15px;
   }
 
+  .input-email,
+  .phone-number {
+    padding-right: 50px;
+  }
+
   .message {
-    gap: 30px;
-    background-color: variables.$cards-backgroud-color;
-    border-radius: 20px 20px;
-    border: none;
-    color: black;
-    padding: 10px 20px;
-    margin-top: 15px;
-    margin-bottom: 15px;
+    padding-right: 380px;
+    padding-bottom: 280px;
+    margin-bottom: 10px;
+   
   }
 
   input#last-name,
@@ -383,6 +380,6 @@ form {
   #phone-number,
   #message {
     border: none;
-    background-color: variables.$cards-backgroud-color;
+    background-color: transparent;
   }
 }
