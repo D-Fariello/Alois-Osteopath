@@ -50,7 +50,7 @@ const ContactForm = () => {
         </div>
         <div className="contacts">
           <div className="input-email">
-            <label htmlFor="email">E-mail:</label>
+            <label htmlFor="email">E-mail: </label>
             <input
               type="email"
               id="email"
@@ -73,7 +73,7 @@ const ContactForm = () => {
               autoComplete="tel"
             />
           </div>
-        </div>
+        </div>{" "}
         <div className="message">
           <label htmlFor="message">Message:</label>
           <textarea
@@ -85,8 +85,11 @@ const ContactForm = () => {
             autoComplete="off"
           />
         </div>
-        <div className="submit-button">
-          <button type="submit"> Envoyer </button>
+        <div className="button-container">
+          <button className="submit-button" type="submit">
+            {" "}
+            Envoyer{" "}
+          </button>
         </div>
       </Form>
     </div>
