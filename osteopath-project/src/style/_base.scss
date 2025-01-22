@@ -24,7 +24,7 @@ header.header {
 
   img.main-nav-logo-image {
     height: 50px;
-}
+  }
 
   ul.nav-bar {
     display: flex;
@@ -36,7 +36,6 @@ header.header {
     text-decoration: none;
     margin-right: 28px;
     margin-left: -20px;
-  
 
     a {
       font-family: variables.$secondary-font-family;
@@ -49,51 +48,46 @@ header.header {
     }
 
     .logo-Image img {
-        max-height: 45px; 
-      }
+      max-height: 45px;
+    }
   }
 
-  .button-nav, .button-header {
+  .button-nav,
+  .button-header {
     @include mixins.button-style;
     background-color: #b7cec3;
     color: white;
     padding: 5px 20px;
     font-size: 13px;
   }
-  
-  
+
   .button-nav a {
-    text-decoration: none;  
-    color: white; 
+    text-decoration: none;
+    color: white;
     display: inline-block;
   }
 }
 
 ////////////// Carrousel /////////////
 
-
-
 ///////// TEXT /////////
 
-
-.hero-title{
+.hero-title {
   color: variables.$secondary-text-color;
   font-family: "Inter";
   font-weight: 400;
 }
 
-.hero-subtitle{
+.hero-subtitle {
   color: variables.$secondary-text-color;
   font-family: "Inter";
   margin: 2% 5%;
-    text-align: center;
-    justify-content: center;
-    display: flex;
+  text-align: center;
+  justify-content: center;
+  display: flex;
 }
 
-
 ////////////// Carrousel Image //////////////
-
 
 .carousel-container {
   width: 100%;
@@ -104,10 +98,11 @@ header.header {
 }
 
 .carousel-slide {
-  width: 100%; 
+  width: 100%;
   opacity: 0;
   visibility: hidden;
-  transition: opacity 0.5s ease, visibility 0.5s ease, background-color 0.5s ease;
+  transition: opacity 0.5s ease, visibility 0.5s ease,
+    background-color 0.5s ease;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -178,9 +173,7 @@ header.header {
   background-color: #fbf9f9;
 }
 
-
 ////////////// Buttons //////////////
-
 
 button.btn.btn-primary {
   @include mixins.button-style;
@@ -191,9 +184,7 @@ button.btn.btn-primary {
   color: #d3606a !important;
 }
 
-
 //////////////// Banner Carrousel ////////////
-
 
 .general-info {
   width: 100%;
@@ -214,12 +205,10 @@ button.btn.btn-primary {
     color: variables.$icons-color;
     font-family: variables.$primary-font-family;
     font-size: 15px;
+  }
 }
-}
-
 
 ////////// Additional info  Section //////////
-
 
 section.additional-info {
   display: flex;
@@ -238,7 +227,10 @@ section.additional-info {
   justify-content: center;
 }
 
-svg.degree-icon, .heart-icon, .timer-icon, .baby-icon  {
+svg.degree-icon,
+.heart-icon,
+.timer-icon,
+.baby-icon {
   border: none;
   background-color: variables.$cards-backgroud-color;
   padding: 60px;
@@ -248,14 +240,12 @@ svg.degree-icon, .heart-icon, .timer-icon, .baby-icon  {
   margin-bottom: 15px;
 }
 
-.additional-text{
+.additional-text {
   font-family: variables.$primary-font-family;
   color: black;
   font-size: 15px;
   margin-bottom: 15px;
 }
-
-
 
 ////////// FAQ Section //////////
 
@@ -272,8 +262,6 @@ h2.faq-title {
   color: white;
   margin-bottom: 0px;
 }
-
-
 
 .faq-items {
   display: flex;
@@ -323,11 +311,9 @@ h2.faq-title {
   }
 }
 
-
-
 ////////// Contact Form Section //////////
 
-h3.title-contact-form {
+h3.contact-us-title {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -341,4 +327,62 @@ h3.title-contact-form {
   margin-bottom: 0px;
   margin-top: 0;
   font-size: 1.5rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center;
+  align-items: flex-start;
+  justify-content: center;
+
+  label {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .names,
+  .contacts {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+  }
+
+  .input-last-name,
+  .input-name,
+  .input-email,
+  .phone-number {
+    display: flex;
+    gap: 30px;
+    background-color: variables.$cards-backgroud-color;
+    border-radius: 20px 20px;
+    border: none;
+    color: black;
+    padding-top: 10px;
+    padding-left: 20px;
+    padding-bottom: 10px;
+    padding-right: 60px;
+    margin-top: 15px;
+  }
+
+  .message {
+    gap: 30px;
+    background-color: variables.$cards-backgroud-color;
+    border-radius: 20px 20px;
+    border: none;
+    color: black;
+    padding: 10px 20px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+
+  input#last-name,
+  #name,
+  #email,
+  #phone-number,
+  #message {
+    border: none;
+    background-color: variables.$cards-backgroud-color;
+  }
 }

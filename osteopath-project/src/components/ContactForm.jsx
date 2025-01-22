@@ -22,53 +22,57 @@ const ContactForm = () => {
     <div className="contact-form">
       <h3 className="contact-us-title"> Formulaire de contact </h3>
       <Form method="post">
-        <div className="input-last-name">
-          <label htmlFor="last-name">Nom:</label>
-          <input
-            type="text"
-            id="last-name"
-            name="lastName"
-            value={formData.lastName}
-            onChange={handleChange}
-            required
-            autoComplete="family-name"
-          />
+        <div className="names">
+          <div className="input-last-name">
+            <label htmlFor="last-name">Nom:</label>
+            <input
+              type="text"
+              id="last-name"
+              name="lastName"
+              value={formData.lastName}
+              onChange={handleChange}
+              required
+              autoComplete="family-name"
+            />
+          </div>
+          <div className="input-name">
+            <label htmlFor="name">Prenom:</label>
+            <input
+              type="text"
+              name="name"
+              id="name"
+              value={formData.name}
+              onChange={handleChange}
+              required
+              autoComplete="given-name"
+            />
+          </div>
         </div>
-        <div className="input-name">
-          <label htmlFor="name">Prenom:</label>
-          <input
-            type="text"
-            name="name"
-            id="name"
-            value={formData.name}
-            onChange={handleChange}
-            required
-            autoComplete="given-name"
-          />
-        </div>
-        <div className="input-email">
-          <label htmlFor="email">E-mail:</label>
-          <input
-            type="email"
-            id="email"
-            name="email"
-            value={formData.email}
-            onChange={handleChange}
-            required
-            autoComplete="email"
-          />
-        </div>
-        <div className="phone-number">
-          <label htmlFor="phone-number"> Téléphone:</label>
-          <input
-            type="tel"
-            name="phoneNumber"
-            id="phone-number"
-            value={formData.phoneNumber}
-            onChange={handleChange}
-            required
-            autoComplete="tel"
-          />
+        <div className="contacts">
+          <div className="input-email">
+            <label htmlFor="email">E-mail:</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              value={formData.email}
+              onChange={handleChange}
+              required
+              autoComplete="email"
+            />
+          </div>
+          <div className="phone-number">
+            <label htmlFor="phone-number"> Téléphone:</label>
+            <input
+              type="tel"
+              name="phoneNumber"
+              id="phone-number"
+              value={formData.phoneNumber}
+              onChange={handleChange}
+              required
+              autoComplete="tel"
+            />
+          </div>
         </div>
         <div className="message">
           <label htmlFor="message">Message:</label>
