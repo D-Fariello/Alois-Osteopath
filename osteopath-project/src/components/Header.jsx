@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 
 const Header = ({
@@ -8,6 +8,11 @@ const Header = ({
   buttonLink,
 }) => {
   const displayText = slideTexts[currentSlide] || "Loading..";
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsMenuOpen((prev) => !prev);
+  };
 
   return (
     <header className="header">
@@ -20,8 +25,19 @@ const Header = ({
           />
         </NavLink>
       </div>
+
+      {/* Burger Menu */}
+      <div
+        className={`burger-menu ${isMenuOpen ? "active" : ""}`}
+        onClick={toggleMenu}
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      {/* Navigation Bar */}
       <nav>
-        <ul className="nav-bar">
+        <ul className={`nav-bar ${isMenuOpen ? "active" : ""}`}>
           <li>
             <a href="#specialites">Spécialités</a>
           </li>
