@@ -53,9 +53,9 @@ const Header = ({
           <li>
             <a href="#faq-section">FAQ</a>
           </li>
-          <li>
+          {/* <li>
             <a href="#a-propos">À propos</a>
-          </li>
+          </li> */}
           <li>
             <a href="#contact"> Contact</a>
           </li>
