@@ -408,6 +408,7 @@ form {
       cursor: pointer;
       width: 30px;
       height: 30px;
+      margin-left:10%;
 
       span {
         display: block;
@@ -440,4 +441,62 @@ form {
       }
     }
   }
+
+  .general-info {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    padding-bottom: 60px;
+
+    .info-item {
+      font-size: 10px;
+  }
+}
+
+  section.additional-info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5%;
+    flex-wrap: wrap;
+}
+
+.faq-items {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fbf9f9;
+  margin-top: 0;
+  padding-top: 30px;
+  padding-bottom: 30px;
+
+  .faq-question {
+    font-family: "Inter";
+    font-size: 10px;
+    width: 100%;
+}
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center;
+
+  .names {
+    display: flex;
+    flex-direction: column;
+}
+.contacts {
+  display: flex;
+  flex-direction: column;
+}
+
+.message {
+  padding-right: 100px;
+}
+}
+
+
 }
