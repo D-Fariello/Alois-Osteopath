@@ -1,17 +1,8 @@
 import React, { useState } from "react";
-import {
-  FaStar,
-  FaRegClock,
-  FaEuroSign,
-  FaCalendarAlt,
-  FaCertificate,
-  FaHandsHelping,
-  FaClock,
-  FaChild,
-} from "react-icons/fa";
-import Header from "./Header";
-import FAQSection from "./FAQSection";
-import ContactForm from "./ContactForm";
+import { FaStar, FaRegClock, FaEuroSign, FaCalendarAlt } from "react-icons/fa";
+import Header from "../components/Header";
+import FAQSection from "../components/FAQSection";
+import ContactForm from "../components/ContactForm";
 
 const Hero = () => {
   const [currentSlide, setCurrentSlide] = useState(0);

@@ -3,7 +3,8 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import "./style/main.scss";
-import Hero from "./components/Hero";
+import Hero from "./pages/Hero";
+import Specialities from "./pages/Specialities";
 import ContactForm from "./components/ContactForm";
 
 // Define routes
@@ -13,8 +14,8 @@ const router = createBrowserRouter([
     element: <Hero />,
   },
   {
-    path: "/contact", // Add the contact route
-    element: <ContactForm />,
+    path: "/specialities", // Add the contact route
+    element: <Specialities />,
   },
 ]);
 

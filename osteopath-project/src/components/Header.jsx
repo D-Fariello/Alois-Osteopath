@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import ScrollToHash from "../utils/ScrollToHash";
 import { NavLink } from "react-router-dom";
 
 const Header = ({
@@ -16,6 +17,7 @@ const Header = ({
 
   return (
     <header className="header">
+      <ScrollToHash />
       <div className="logo-Image">
         <NavLink to="/" className="main-nav-logo">
           <img
@@ -39,7 +41,7 @@ const Header = ({
       <nav>
         <ul className={`nav-bar ${isMenuOpen ? "active" : ""}`}>
           <li>
-            <a href="#specialites">Spécialités</a>
+            <NavLink to="/specialities">Spécialités</NavLink>
           </li>
           <li>
             <a href="#ateliers">Ateliers</a>
@@ -51,13 +53,13 @@ const Header = ({
             <a href="#blog">Blog</a>
           </li>
           <li>
-            <a href="#faq-section">FAQ</a>
+            <NavLink to="/#faq-section">FAQ</NavLink>
           </li>
           <li>
             <a href="#a-propos">À propos</a>
           </li>
           <li>
-            <a href="#contact"> Contact</a>
+            <NavLink to="/#contact">Contact</NavLink>
           </li>
         </ul>
       </nav>
