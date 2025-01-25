@@ -2,102 +2,71 @@ import React from "react";
 import Header from "../components/Header";
 
 const Specialities = () => {
-  return (
-    <div>
-      <Header />
-      <div className="title-section">
-        <h1 className="specialities-title">Spécialités</h1>
-      </div>
-      {/* Specialities 1 Section  */}
-      <section className="specialities-info">
-        <h2 className="specialities-subtitle"> Moments de vie</h2>
-        <div className="specialities-item">
-          <img
-            src="/icones/hero-icones/PNG/Diplome.png"
-            alt="degree"
-            className="degree-icon"
-          />
-          <span className="specialities-text">Futures Mamans </span>
-        </div>
-        <div className="specialities-item">
-          <img
-            src="/icones/hero-icones/PNG/Chrono.png"
-            alt="Bienveillance"
-            className="heart-icon"
-          />
-          <span className="specialities-text">Nourrissons et Enfants</span>
-        </div>
-        <div className="specialities-item">
-          <img
-            src="/icones/hero-icones/PNG/Bienveillance.png"
-            alt="timer"
-            className="timer-icon"
-          />
-          <span className="specialities-text">Sportifs</span>
-        </div>
-        <div className="specialities-item">
-          <img
-            src="/icones/hero-icones/PNG/TrancheAge.png"
-            alt="Tranche d'age"
-            className="baby-icon"
-          />
-          <span className="specialities-text">Actifs</span>
-        </div>
-        <div className="specialities-item">
-          <img
-            src="/icones/hero-icones/PNG/TrancheAge.png"
-            alt="Adults"
-            className="adults-icon"
-          />
-          <span className="specialities-text">Seniors et Mobilité</span>
-        </div>
-      </section>
+  const specialitiesLife = [
+    { icon: "Diplome.png", alt: "Degree", text: "Futures Mamans" },
+    {
+      icon: "Chrono.png",
+      alt: "Bienveillance",
+      text: "Nourrissons et Enfants",
+    },
+    { icon: "Bienveillance.png", alt: "Timer", text: "Sportifs" },
+    { icon: "TrancheAge.png", alt: "TrancheAge", text: "Actifs" },
+    { icon: "TrancheAge.png", alt: "Adults", text: "Seniors et Mobilité" },
+  ];
 
-      {/* Specialities 2 Section  */}
-      <section className="specialities-info">
-        <h2 className="specialities-subtitle"> Zones d’Intervention </h2>
-        <div className="specialities-item">
-          <img
-            src="/icones/hero-icones/PNG/Diplome.png"
-            alt="degree"
-            className="degree-icon"
-          />
-          <span className="specialities-text">Articulations</span>
-        </div>
-        <div className="specialities-item">
-          <img
-            src="/icones/hero-icones/PNG/Chrono.png"
-            alt="Bienveillance"
-            className="heart-icon"
-          />
-          <span className="specialities-text">ORL</span>
-        </div>
-        <div className="specialities-item">
-          <img
-            src="/icones/hero-icones/PNG/Bienveillance.png"
-            alt="timer"
-            className="timer-icon"
-          />
-          <span className="specialities-text">Système Digestif</span>
-        </div>
-        <div className="specialities-item">
-          <img
-            src="/icones/hero-icones/PNG/TrancheAge.png"
-            alt="Tranche d'age"
-            className="baby-icon"
-          />
-          <span className="specialities-text">Mâchoire</span>
-        </div>
-        <div className="specialities-item">
-          <img
-            src="/icones/hero-icones/PNG/TrancheAge.png"
-            alt="Tranche d'age"
-            className="foot-icon"
-          />
-          <span className="specialities-text">Pieds</span>
-        </div>
-      </section>
-    </div>
+  const specialitiesZones = [
+    { icon: "Diplome.png", alt: "Degree", text: "Articulations" },
+    { icon: "Chrono.png", alt: "Bienveillance", text: "ORL" },
+    { icon: "Bienveillance.png", alt: "Timer", text: "Système Digestif" },
+    { icon: "TrancheAge.png", alt: "TrancheAge", text: "Mâchoire" },
+    { icon: "TrancheAge.png", alt: "Foot", text: "Pieds" },
+  ];
+
+  return (
+    <>
+      <Header />
+      <div className="specialities-page">
+        <section className="title-section">
+          <h1 className="specialities-title">Spécialités</h1>
+        </section>
+
+        <section className="specialities-info">
+          <div className="specialities-header">
+            <h2 className="specialities-subtitle">Moments de vie</h2>
+          </div>
+          <div className="specialities-items">
+            {specialitiesLife.map((item, index) => (
+              <div className="specialities-item" key={index}>
+                <img
+                  src={`/icones/hero-icones/PNG/${item.icon}`}
+                  alt={item.alt}
+                  className={`icon-${item.alt.toLowerCase()}`}
+                />
+                <span className="specialities-text">{item.text}</span>
+              </div>
+            ))}
+          </div>
+        </section>
+
+        <section className="specialities-info">
+          <div className="specialities-header">
+            <h2 className="specialities-subtitle">Zones d’Intervention</h2>
+          </div>
+          <div className="specialities-items">
+            {specialitiesZones.map((item, index) => (
+              <div className="specialities-item" key={index}>
+                <img
+                  src={`/icones/hero-icones/PNG/${item.icon}`}
+                  alt={item.alt}
+                  className={`icon-${item.alt.toLowerCase()}`}
+                />
+                <span className="specialities-text">{item.text}</span>
+              </div>
+            ))}
+          </div>
+        </section>
+      </div>
+    </>
   );
 };
 

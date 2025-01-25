@@ -230,7 +230,7 @@ section.additional-info {
 img.degree-icon,
 .heart-icon,
 .timer-icon,
-.baby-icon {
+.baby-icon, .adults-icon, .foot-icon {
   height: 100px;
   border: none;
   background-color: variables.$cards-backgroud-color;
@@ -386,6 +386,58 @@ form {
     }
   }
 }
+
+///////////////////////////////////// SPECIALITIES PAGE ///////////////////////////
+
+// .section.title-section {
+//   display: flex;
+//   flex-direction: row;
+//   align-items: center;
+
+//   .specialities-info {
+//     display: flex;
+//     flex-direction: row;
+//     text-align: center;
+//     flex-wrap: wrap;
+// }
+
+// .specialities-header {
+//   display: flex;
+//   flex-direction: row;
+//   align-items: flex-start;
+//   justify-content: flex-start;
+//   align-content: center;
+//   flex-wrap: nowrap;
+// }
+
+//   .specialities-subtitle {
+//     margin-bottom: 1rem; // Add space between subtitle and icons
+//     font-size: 1.5rem; // Adjust font size as needed
+//     font-weight: bold; // Emphasize subtitle
+//   }
+//   }
+
+//   .specialities-items {
+//     display: flex;
+//     margin-top: 100px;
+//     flex-direction: row;
+//     align-items: center;
+// }
+
+img.icon-degree,
+.icon-heart,
+.icon-timer,
+.icon-baby, .icon-adults, .icon-foot, .icon-bienveillance, .icon-trancheage{
+  height: 100px;
+  border: none;
+  background-color: variables.$cards-backgroud-color;
+  padding: 35px 25px;
+  border-radius: 100%;
+  color: variables.$second-background-color;
+  font-size: 40px;
+  margin-bottom: 15px;
+}
+
 
 /////////////////////////////////////// Mobile Version ////////////////////////////////
 
