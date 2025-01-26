@@ -1,5 +1,4 @@
 import React from "react";
-import Header from "../components/Header";
 
 const Specialities = () => {
   const specialitiesLife = [
@@ -23,50 +22,47 @@ const Specialities = () => {
   ];
 
   return (
-    <>
-      <Header />
-      <div className="specialities-page">
-        <section className="title-section">
-          <h1 className="specialities-title">Spécialités</h1>
-        </section>
+    <div className="specialities-page">
+      <section className="title-section">
+        <h1 className="specialities-title">Spécialités</h1>
+      </section>
 
-        <section className="specialities-info">
-          <div className="specialities-header">
-            <h2 className="specialities-subtitle">Moments de vie</h2>
-          </div>
-          <div className="specialities-items">
-            {specialitiesLife.map((item, index) => (
-              <div className="specialities-item" key={index}>
-                <img
-                  src={`/icones/hero-icones/PNG/${item.icon}`}
-                  alt={item.alt}
-                  className={`icon-${item.alt.toLowerCase()}`}
-                />
-                <span className="specialities-text">{item.text}</span>
-              </div>
-            ))}
-          </div>
-        </section>
+      <section className="specialities-info">
+        <div className="specialities-header">
+          <h2 className="specialities-subtitle">Moments de vie</h2>
+        </div>
+        <div className="specialities-items">
+          {specialitiesLife.map((item, index) => (
+            <div className="specialities-item" key={index}>
+              <img
+                src={`/icones/hero-icones/PNG/${item.icon}`}
+                alt={item.alt}
+                className={`icon-${item.alt.toLowerCase()}`}
+              />
+              <span className="specialities-text">{item.text}</span>
+            </div>
+          ))}
+        </div>
+      </section>
 
-        <section className="specialities-info">
-          <div className="specialities-header">
-            <h2 className="specialities-subtitle">Zones d’Intervention</h2>
-          </div>
-          <div className="specialities-items">
-            {specialitiesZones.map((item, index) => (
-              <div className="specialities-item" key={index}>
-                <img
-                  src={`/icones/hero-icones/PNG/${item.icon}`}
-                  alt={item.alt}
-                  className={`icon-${item.alt.toLowerCase()}`}
-                />
-                <span className="specialities-text">{item.text}</span>
-              </div>
-            ))}
-          </div>
-        </section>
-      </div>
-    </>
+      <section className="specialities-info-2">
+        <div className="specialities-header">
+          <h2 className="specialities-subtitle">Zones d’Intervention</h2>
+        </div>
+        <div className="specialities-items">
+          {specialitiesZones.map((item, index) => (
+            <div className="specialities-item" key={index}>
+              <img
+                src={`/icones/hero-icones/PNG/${item.icon}`}
+                alt={item.alt}
+                className={`icon-${item.alt.toLowerCase()}`}
+              />
+              <span className="specialities-text">{item.text}</span>
+            </div>
+          ))}
+        </div>
+      </section>
+    </div>
   );
 };
 

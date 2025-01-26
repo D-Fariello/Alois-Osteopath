@@ -11,26 +11,29 @@ import ContactForm from "./components/ContactForm";
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <Hero />,
+    element: (
+      <>
+        <Header /> {/* Header for the Hero page */}
+        <Hero />
+      </>
+    ),
   },
   {
-    path: "/specialities", // Add the contact route
-    element: <Specialities />,
+    path: "/specialities",
+    element: (
+      <>
+        <Header /> {/* Header for the Specialities page */}
+        <Specialities />
+      </>
+    ),
   },
 ]);
 
 const App = () => {
   return (
     <RouterProvider router={router}>
-      {" "}
-      {/* Use RouterProvider for routing */}
       <div className="app">
-        {/* <Header /> */}
-
-        {/* Page Content */}
         {/* Routes will be rendered automatically */}
-
-        {/* Footer */}
         <Footer />
       </div>
     </RouterProvider>
