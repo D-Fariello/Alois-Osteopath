@@ -55,6 +55,50 @@ const Specialities = () => {
     },
   ];
 
+  const iconItems = [
+    {
+      icon: "bienveillance.png",
+      alt: "bienveillance",
+      description: "Bienveillance",
+    },
+    { icon: "expertise.png", alt: "expertise", description: "Expertise" },
+    { icon: "douceur.png", alt: "douceur", description: "Douceur" },
+    { icon: "confiance.png", alt: "confiance", description: "Confiance" },
+  ];
+
+  const cardItems = [
+    {
+      title: "Card 1",
+      text: "Grossesse et Lombalgies : Comment L’Ostéopathie Peut Vous Soulager",
+      image: "CardImage1.jpg",
+    },
+    {
+      title: "Card 2",
+      text: "3 Exercices Simples pour Réduire les Tensions Pendant la Grossesse",
+      image: "CardImage2.jpg",
+    },
+    {
+      title: "Card 3",
+      text: "Préparer Son Corps à l’Accouchement avec L’Ostéopathie",
+      image: "CardImage3.jpg",
+    },
+    {
+      title: "Card 4",
+      text: "Soulager Sciatiques et Reflux : L’Ostéopathie au Service des Futures Mamans",
+      image: "CardImage4.jpg",
+    },
+  ];
+
+  const questions = [
+    "À partir de quel mois de grossesse peut-on consulter ?",
+    "Quels maux de grossesse l’ostéopathie peut-elle soulager (sciatique, lombalgies, reflux) ?",
+    "Est-ce sans danger pour le bébé et la future maman ??",
+    "L’ostéopathie peut-elle aider à préparer l’accouchement ?",
+    "Quels exercices ou conseils un ostéopathe peut-il donner pour soulager les douleurs au quotidien ?",
+    "L’ostéopathie peut-elle prévenir ou réduire les risques de fausse couche ?",
+    "Doit-on choisir un ostéopathe spécialisé en périnatalité ?",
+  ];
+
   return (
     <div className="specialities-page">
       <section className="title-section">
@@ -131,6 +175,73 @@ const Specialities = () => {
                 </ul>
               </div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Values Section */}
+      <section className="values-section">
+        <div className="values-title">
+          <h2>Valeurs</h2>
+        </div>
+        <div className="values-first-div">
+          <div className="icons-values-container">
+            {iconItems.map((item, index) => (
+              <div className="icon-item" key={index}>
+                <img
+                  src={`/icones/Spécialité-valeur${item.icon}`}
+                  alt={item.alt}
+                  className="icon-img"
+                />
+                <p>{item.description}</p>
+              </div>
+            ))}
+          </div>
+          <button className="values-button">Prenez rendez-vous </button>
+        </div>
+      </section>
+
+      {/* Second Values Section */}
+      <section className="second-values-section">
+        <div className="second-values-div">
+          <h3 className="second-values-title">
+            Les derniers articles de blog pour les femmes enceintes
+          </h3>
+          <div className="cards-container">
+            {cardItems.map((item, index) => (
+              <div className="card-item" key={index}>
+                <img
+                  src={`/images/${item.image}`}
+                  alt={item.title}
+                  className="card-image"
+                />
+                <h4>{item.title}</h4>
+                <p>{item.text}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Third Values Section */}
+      <section className="third-values-section">
+        <div className="third-values-div">
+          <h3 className="third-values-title">FAQ</h3>
+          <div className="third-values-container">
+            <div className="third-values-column">
+              {questions.slice(0, 3).map((question, index) => (
+                <p key={index} className="question">
+                  {question}
+                </p>
+              ))}
+            </div>
+            <div className="third-values-faq-column">
+              {questions.slice(3).map((question, index) => (
+                <p key={index} className="question">
+                  {question}
+                </p>
+              ))}
+            </div>
           </div>
         </div>
       </section>

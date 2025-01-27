@@ -19,13 +19,13 @@ const Header = ({
     <header className="header">
       <ScrollToHash />
       <div className="logo-Image">
-        <NavLink to="/" className="main-nav-logo">
+        <a href="/" className="main-nav-logo">
           <img
             src="/images/poleOsteo.png"
             alt="Logo Pole Osteo"
             className="main-nav-logo-image"
           />
-        </NavLink>
+        </a>
       </div>
 
       {/* Burger Menu */}
@@ -52,6 +52,7 @@ const Header = ({
           <li>
             <a href="#blog">Blog</a>
           </li>
+
           <li>
             <NavLink to="/#faq-section">FAQ</NavLink>
           </li>
