@@ -230,7 +230,9 @@ section.additional-info {
 img.degree-icon,
 .heart-icon,
 .timer-icon,
-.baby-icon, .adults-icon, .foot-icon {
+.baby-icon,
+.adults-icon,
+.foot-icon {
   height: 100px;
   border: none;
   background-color: variables.$cards-backgroud-color;
@@ -410,72 +412,146 @@ form {
     margin-bottom: 0px;
     margin-top: 0;
     font-size: 1.5rem;
-}
+  }
 
-h2.specialities-subtitle, h2.specialities-subtitle-2 {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  margin-left: 5%;
-  font-family: variables.$primary-font-family;
-  font-size: 1rem;
-  margin-top: 3%;
-}
+  h2.specialities-subtitle,
+  h2.specialities-subtitle-2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin-left: 5%;
+    font-family: variables.$primary-font-family;
+    font-size: 1rem;
+    margin-top: 3%;
+  }
 
-  .specialities-info, .specialities-info {
+  h2.specialities-subtitle-2 {
+    margin-top: -5px;
+  }
+
+  .specialities-info,
+  .specialities-info {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
-  
+
   .specialities-info-2 {
     align-items: center;
   }
 
-  .specialities-item, .specialities-item-2 {
+  .specialities-item,
+  .specialities-item-2 {
     display: flex;
     flex-direction: column;
     margin: 20px;
     justify-content: center;
     align-items: center;
-}
+  }
 
-  .specialities-items, .specialities-items-2 {
+  .specialities-items,
+  .specialities-items-2 {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
+  }
+
+  figcaption.specialities-text,
+  .specialities-text-2 {
+    color: variables.$hover-text-color;
+    font-family: variables.$primary-font-family;
+    font-size: 13px;
+    font-weight: 700;
+    display: flex;
+    flex-wrap: wrap;
+    position: absolute;
+    margin-top: 85px;
+  }
+
+  img.icon-femme-enceinte,
+  .icon-bebé,
+  .icon-sportif,
+  .icon-actif,
+  .icon-senior,
+  .icon-articulations,
+  .icon-orl,
+  .icon-systeme-digestif,
+  .icon-mâchoire,
+  .icon-pied {
+    height: 100px;
+    border: none;
+    background-color: variables.$cards-backgroud-color;
+    padding: 35px 25px;
+    border-radius: 18px;
+    color: variables.$second-background-color;
+    font-size: 40px;
+    margin-bottom: 15px;
+  }
 }
 
-span.specialities-text, span.specialities-text-2 {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-}
+section.pregnancy-section {
+  .pregnancy-section-image-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 2%;
+    background-color: variables.$second-background-color;
 
-figcaption.specialities-text, .specialities-text-2{
-  color: variables.$hover-text-color;
-  font-family: variables.$primary-font-family;
-  font-size: 15px;
-  font-weight: 700;
-}
+    img.pregnancy-image {
+      height: 500px;
+      margin: -55px 0px
+    }
+  }
+  .pregnancy-section-bullets {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: variables.$buttons-background-color;
+    border-radius: 35px;
+    margin-left: 30px;
+    position: absolute;
+    margin-top: -60px;
+    margin-right: 30px;
+    margin-bottom: 10%;
+  }
+  .bullet-categories {
+    display: flex;
+  }
 
+  h2.pregnancy-section-title {
+    display: flex;
+    text-align: center;
+    font-size: 18px;
+    font-family: variables.$primary-font-family;
+    font-weight: 200;
+  }
 
-img.icon-degree,
-.icon-heart,
-.icon-timer,
-.icon-baby, .icon-adults, .icon-foot, .icon-bienveillance, .icon-trancheage{
-  height: 90px;
-  border: none;
-  background-color: variables.$cards-backgroud-color;
-  padding: 35px 25px;
-  border-radius: 18px;
-  color: variables.$second-background-color;
-  font-size: 40px;
-  margin-bottom: 15px;
-}
+  .bullet-category {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+
+    h3.bullet-category-title {
+      display: flex;
+      text-align: center;
+      font-size: variables.$secondary-font-size;
+      justify-content: center;
+      align-items: center;
+      font-family: variables.$primary-font-family;
+      color: variables.$hover-text-color;
+    }
+    li.bullet-point {
+      font-family: variables.$primary-font-family;
+      font-size: 13px;
+      margin-top: 5px;
+    }
+  }
 }
 
 /////////////////////////////////////// Mobile Version ////////////////////////////////
@@ -566,9 +642,9 @@ img.icon-degree,
     align-items: center;
     background-color: #fbf9f9;
     margin-top: 0;
-    
 
-    .faq-question, .faq-answer {
+    .faq-question,
+    .faq-answer {
       font-family: "Inter";
       font-size: 11px;
       width: 100%;
@@ -581,7 +657,6 @@ img.icon-degree,
     flex-direction: column;
     flex-wrap: wrap;
     align-content: center;
-    
 
     .names {
       display: flex;
