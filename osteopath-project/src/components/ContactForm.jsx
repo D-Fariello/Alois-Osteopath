@@ -20,7 +20,7 @@ const ContactForm = () => {
 
   return (
     <div className="contact-form" id="contact">
-      <h3 className="contact-us-title"> Formulaire de contact </h3>
+      <h2 className="contact-us-title"> Formulaire de contact </h2>
       <Form method="post">
         <div className="names">
           <div className="input-last-name">

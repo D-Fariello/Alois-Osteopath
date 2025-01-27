@@ -16,7 +16,7 @@ const Header = ({
   };
 
   return (
-    <header className="header">
+    <div className="page-heading">
       <ScrollToHash />
       <div className="logo-Image">
         <a href="/" className="main-nav-logo">
@@ -38,7 +38,7 @@ const Header = ({
         <span></span>
       </div>
       {/* Navigation Bar */}
-      <nav>
+      <nav className={`navigation-links ${isMenuOpen ? "active" : ""}`}>
         <ul className={`nav-bar ${isMenuOpen ? "active" : ""}`}>
           <li>
             <NavLink to="/specialities">Spécialités</NavLink>
@@ -74,7 +74,7 @@ const Header = ({
           {displayText}
         </a>
       </div>
-    </header>
+    </div>
   );
 };
 

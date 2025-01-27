@@ -13,7 +13,7 @@ const router = createBrowserRouter([
     path: "/",
     element: (
       <>
-        <Header /> {/* Header for the Hero page */}
+        {/*<Header />  Header for the Hero page */}
         <Hero />
       </>
     ),
