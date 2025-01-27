@@ -389,49 +389,40 @@ form {
 
 ///////////////////////////////////// SPECIALITIES PAGE ///////////////////////////
 
-// .section.title-section {
-//   display: flex;
-//   flex-direction: row;
-//   align-items: center;
-
-//   .specialities-info {
-//     display: flex;
-//     flex-direction: row;
-//     text-align: center;
-//     flex-wrap: wrap;
-// }
-
-// .specialities-header {
-//   display: flex;
-//   flex-direction: row;
-//   align-items: flex-start;
-//   justify-content: flex-start;
-//   align-content: center;
-//   flex-wrap: nowrap;
-// }
-
-//   .specialities-subtitle {
-//     margin-bottom: 1rem; // Add space between subtitle and icons
-//     font-size: 1.5rem; // Adjust font size as needed
-//     font-weight: bold; // Emphasize subtitle
-//   }
-//   }
-
-//   .specialities-items {
-//     display: flex;
-//     margin-top: 100px;
-//     flex-direction: row;
-//     align-items: center;
-// }
-
 .specialities-page {
   display: flex;
-  padding-top: 10%;
+  padding-top: 8%;
   position: relative;
   flex-direction: column;
   margin-bottom: 5%;
 
-  .specialities-info {
+  h1.specialities-title {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background: border-box;
+    background-color: variables.$second-background-color;
+    font-family: variables.$primary-font-family;
+    font-weight: 300;
+    padding: 20px;
+    color: white;
+    margin-bottom: 0px;
+    margin-top: 0;
+    font-size: 1.5rem;
+}
+
+h2.specialities-subtitle, h2.specialities-subtitle-2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  margin-left: 5%;
+  font-family: variables.$primary-font-family;
+  font-size: 1rem;
+  margin-top: 3%;
+}
+
+  .specialities-info, .specialities-info {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -439,24 +430,36 @@ form {
   }
   
   .specialities-info-2 {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
     align-items: center;
   }
 
-  .specialities-items {
+  .specialities-item, .specialities-item-2 {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+  .specialities-items, .specialities-items-2 {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
 }
 
-span.specialities-text {
+span.specialities-text, span.specialities-text-2 {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
+}
+
+figcaption.specialities-text, .specialities-text-2{
+  color: variables.$hover-text-color;
+  font-family: variables.$primary-font-family;
+  font-size: 15px;
+  font-weight: 700;
 }
 
 
@@ -468,7 +471,7 @@ img.icon-degree,
   border: none;
   background-color: variables.$cards-backgroud-color;
   padding: 35px 25px;
-  border-radius: 100%;
+  border-radius: 18px;
   color: variables.$second-background-color;
   font-size: 40px;
   margin-bottom: 15px;
