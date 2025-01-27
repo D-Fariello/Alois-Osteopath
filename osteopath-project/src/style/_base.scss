@@ -335,8 +335,15 @@ h2.contact-us-title {
 form {
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
   align-content: center;
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+
+  .names, .contacts{
+    display: flex;
+    flex-wrap: wrap;
+}
 
   .input-last-name,
   .input-name,
@@ -344,7 +351,7 @@ form {
   .phone-number,
   .message {
     display: flex;
-    gap: 30px;
+    gap: 20px;
     background-color: variables.$cards-backgroud-color;
     border-radius: 20px 20px;
     border: none;
@@ -355,13 +362,18 @@ form {
     margin-top: 15px;
     font-family: variables.$primary-font-family;
     font-size: variables.$secondary-font-size;
+    width: 290px;
   }
 
-  .message {
-    padding-right: 380px;
-    padding-bottom: 150px;
-    margin-bottom: 10px;
-  }
+  input#last-name, #name, #email, #phone-number, #message  {
+    width: 90%;
+}
+
+.message {
+  height: 200px;
+  margin-bottom: 20px;
+  width: 47%;
+}
 
   input#last-name,
   #name,
@@ -679,10 +691,30 @@ section.pregnancy-section {
       align-items: center;
     }
 
-    .message {
-      display: flex;
-      padding-right: 100px;
-      flex-direction: column;
-    }
+    .input-last-name,
+  .input-name,
+  .input-email,
+  .phone-number,
+  .message {
+    display: flex;
+    gap: 20px;
+    background-color: variables.$cards-backgroud-color;
+    border-radius: 20px 20px;
+    border: none;
+    color: black;
+    padding-top: 10px;
+    padding-left: 20px;
+    padding-bottom: 10px;
+    margin-top: 15px;
+    font-family: variables.$primary-font-family;
+    font-size: 13px;
+    width: 250px;
+  }
+
+  .message {
+    height: 200px;
+    margin-bottom: 20px;
+    width: 70%;
+  }
   }
 }

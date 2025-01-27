@@ -39,7 +39,7 @@ const Header = ({
       </div>
       {/* Navigation Bar */}
       <nav className={`navigation-links ${isMenuOpen ? "active" : ""}`}>
-        <ul className={`nav-bar ${isMenuOpen ? "active" : ""}`}>
+        <ul className="nav-bar">
           <li>
             <NavLink to="/specialities">Spécialités</NavLink>
           </li>

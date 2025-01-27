@@ -50,7 +50,7 @@ const ContactForm = () => {
         </div>
         <div className="contacts">
           <div className="input-email">
-            <label htmlFor="email">E-mail: </label>
+            <label htmlFor="email">Email: </label>
             <input
               type="email"
               id="email"
