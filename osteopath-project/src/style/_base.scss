@@ -340,10 +340,11 @@ form {
   align-items: center;
   justify-items: center;
 
-  .names, .contacts{
+  .names,
+  .contacts {
     display: flex;
     flex-wrap: wrap;
-}
+  }
 
   .input-last-name,
   .input-name,
@@ -365,15 +366,19 @@ form {
     width: 290px;
   }
 
-  input#last-name, #name, #email, #phone-number, #message  {
+  input#last-name,
+  #name,
+  #email,
+  #phone-number,
+  #message {
     width: 90%;
-}
+  }
 
-.message {
-  height: 200px;
-  margin-bottom: 20px;
-  width: 47%;
-}
+  .message {
+    height: 200px;
+    margin-bottom: 20px;
+    width: 47%;
+  }
 
   input#last-name,
   #name,
@@ -512,10 +517,11 @@ section.pregnancy-section {
     justify-content: center;
     margin-top: 2%;
     background-color: variables.$second-background-color;
+    height: 390px;
 
     img.pregnancy-image {
-      height: 500px;
-      margin: -55px 0px;
+      height: 330px;
+      margin-bottom: 22px;
     }
   }
   .pregnancy-section-bullets {
@@ -567,10 +573,73 @@ section.pregnancy-section {
   }
 }
 
+//// Values Section
+
+section.values-section {
+  .values-title-div {
+    display: flex;
+    padding-top: 60px;
+    font-family: variables.$primary-font-family;
+    justify-content: center;
+
+    .values-title {
+      font-weight: 300;
+    }
+  }
+
+  .values-first-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+
+  .icons-values-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .icon-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    img.icon-img {
+      height: 80px;
+      border: none;
+      background-color: #fbf9f9;
+      padding: 35px 25px;
+      border-radius: 100%;
+      color: #b7cec3;
+      font-size: 40px;
+      margin-bottom: 15px;
+    }
+
+    .item-name{
+      font-family: variables.$primary-font-family;
+      font-size: variables.$secondary-font-size;
+    }
+  }
+
+  .values-button{
+  @include mixins.button-style;
+  background-color: #b7cec3;
+  color: white;
+  padding: 5px 20px;
+  font-size: 13px;
+  margin-top: 30px;
+}
+}
+}
+
+
 /////////////////////////////////////// Tablet Version ////////////////////////////////
 
 @media (min-width: 768px) and (max-width: 1024px) {
-
   .page-heading {
     display: flex;
     flex-direction: row;
@@ -582,40 +651,43 @@ section.pregnancy-section {
     padding: 20px 0;
     width: 100%;
 
-.button-nav {
-  display: none;
-}
+    .button-nav {
+      display: none;
+    }
 
-ul.nav-bar {
-  margin-right: 20px;
-  margin-left: -20px;
-}
+    ul.nav-bar {
+      margin-right: 20px;
+      margin-left: -20px;
+    }
   }
 
   .general-info {
     gap: 25px;
-}
+  }
 
   section.additional-info {
     gap: 10px;
 
-    img.degree-icon, .heart-icon, .timer-icon, .baby-icon, .adults-icon, .foot-icon {
+    img.degree-icon,
+    .heart-icon,
+    .timer-icon,
+    .baby-icon,
+    .adults-icon,
+    .foot-icon {
       padding: 25px 15px;
-}
-}
+    }
+  }
 
-.faq-items .faq-question {
-  width: 600px;
-  
-}
-.faq-answer {
-  width: 600px !important;
-}
+  .faq-items .faq-question {
+    width: 600px;
+  }
+  .faq-answer {
+    width: 600px !important;
+  }
 
-form .message {
-  width: 70%;
-}
-
+  form .message {
+    width: 70%;
+  }
 }
 
 /////////////////////////////////////// Mobile Version ////////////////////////////////
@@ -651,29 +723,29 @@ form .message {
         transition: 0.3s;
       }
     }
-    .navigation-links{
+    .navigation-links {
       display: none;
-        .nav-bar {
-          display: flex; // Hide by default for mobile
-    
-          &.active {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            position: absolute;
-            top: 60px;
-            left: 20px;
-            width: 100%;
-            background-color: variables.$background-color;
-            padding: 10px 0;
-            gap: 15px;
-    
-            a {
-              font-size: 18px;
-            }
+      .nav-bar {
+        display: flex; // Hide by default for mobile
+
+        &.active {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          position: absolute;
+          top: 60px;
+          left: 20px;
+          width: 100%;
+          background-color: variables.$background-color;
+          padding: 10px 0;
+          gap: 15px;
+
+          a {
+            font-size: 18px;
           }
         }
       }
+    }
   }
 
   .general-info {
@@ -743,29 +815,29 @@ form .message {
     }
 
     .input-last-name,
-  .input-name,
-  .input-email,
-  .phone-number,
-  .message {
-    display: flex;
-    gap: 20px;
-    background-color: variables.$cards-backgroud-color;
-    border-radius: 20px 20px;
-    border: none;
-    color: black;
-    padding-top: 10px;
-    padding-left: 20px;
-    padding-bottom: 10px;
-    margin-top: 15px;
-    font-family: variables.$primary-font-family;
-    font-size: 13px;
-    width: 250px;
-  }
+    .input-name,
+    .input-email,
+    .phone-number,
+    .message {
+      display: flex;
+      gap: 20px;
+      background-color: variables.$cards-backgroud-color;
+      border-radius: 20px 20px;
+      border: none;
+      color: black;
+      padding-top: 10px;
+      padding-left: 20px;
+      padding-bottom: 10px;
+      margin-top: 15px;
+      font-family: variables.$primary-font-family;
+      font-size: 13px;
+      width: 250px;
+    }
 
-  .message {
-    height: 200px;
-    margin-bottom: 20px;
-    width: 70%;
-  }
+    .message {
+      height: 200px;
+      margin-bottom: 20px;
+      width: 70%;
+    }
   }
 }

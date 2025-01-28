@@ -150,7 +150,7 @@ const Specialities = () => {
         {/* First Part: Image with Colored Background */}
         <div className="pregnancy-section-image-container">
           <img
-            src="/icones/Spécialité-femmsEnceinte/30.png"
+            src="/icones/Spécialité-femmsEnceinte/photo-specialities.avif"
             alt="Descriptive Alt Text"
             className="pregnancy-image"
           />
@@ -181,19 +181,19 @@ const Specialities = () => {
 
       {/* Values Section */}
       <section className="values-section">
-        <div className="values-title">
-          <h2>Valeurs</h2>
+        <div className="values-title-div">
+          <h2 className="values-title">Valeurs</h2>
         </div>
         <div className="values-first-div">
           <div className="icons-values-container">
             {iconItems.map((item, index) => (
               <div className="icon-item" key={index}>
                 <img
-                  src={`/icones/Spécialité-valeur${item.icon}`}
+                  src={`/icones/Spécialité-valeur/${item.icon}`}
                   alt={item.alt}
                   className="icon-img"
                 />
-                <p>{item.description}</p>
+                <p className="item-name">{item.description}</p>
               </div>
             ))}
           </div>
