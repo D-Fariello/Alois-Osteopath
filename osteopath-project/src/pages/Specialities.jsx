@@ -197,7 +197,12 @@ const Specialities = () => {
               </div>
             ))}
           </div>
-          <button className="values-button">Prenez rendez-vous </button>
+          <a
+            href="https://www.doctolib.fr/osteopathe/nice/alois-ruetsch"
+            target="_blank"
+          >
+            <button className="values-button">Prenez rendez-vous</button>
+          </a>
         </div>
       </section>
 
