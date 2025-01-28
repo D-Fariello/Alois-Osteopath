@@ -567,6 +567,57 @@ section.pregnancy-section {
   }
 }
 
+/////////////////////////////////////// Tablet Version ////////////////////////////////
+
+@media (min-width: 768px) and (max-width: 1024px) {
+
+  .page-heading {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    position: fixed;
+    z-index: 1000;
+    padding: 20px 0;
+    width: 100%;
+
+.button-nav {
+  display: none;
+}
+
+ul.nav-bar {
+  margin-right: 20px;
+  margin-left: -20px;
+}
+  }
+
+  .general-info {
+    gap: 25px;
+}
+
+  section.additional-info {
+    gap: 10px;
+
+    img.degree-icon, .heart-icon, .timer-icon, .baby-icon, .adults-icon, .foot-icon {
+      padding: 25px 15px;
+}
+}
+
+.faq-items .faq-question {
+  width: 600px;
+  
+}
+.faq-answer {
+  width: 600px !important;
+}
+
+form .message {
+  width: 70%;
+}
+
+}
+
 /////////////////////////////////////// Mobile Version ////////////////////////////////
 
 @media (max-width: 768px) {
