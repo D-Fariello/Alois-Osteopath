@@ -592,6 +592,7 @@ section.values-section {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding-bottom: 5%;
 
 
   .icons-values-container {
@@ -635,6 +636,68 @@ section.values-section {
 }
 }
 }
+
+
+//// Pregnant Woman Section
+
+
+section.second-values-section {
+  display: flex;
+  background-color: variables.$second-background-color;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 3%;
+
+.second-values-div {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center;
+  align-items: flex-start;
+}
+
+h3.second-values-title {
+  margin-left: 3%;
+  color: variables.$secondary-text-color;
+  font-family: "Inter";
+}
+
+.cards-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  img.card-image {
+    height: 130px;
+    width: auto;
+    position: relative;
+    margin-left: -13%;
+  }
+  
+  .card-item {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+
+    .text-pregnancy-card {
+      display: flex;
+      flex-direction: row;
+      background-color: variables.$buttons-background-color;
+      border-radius: 20px;
+      padding: 20px;
+      font-family: variables.$primary-font-family;
+      font-size: 13px;
+      color: variables.$hover-text-color;
+      font-weight: 500;
+      width: 100px;
+    height: 100px;
+    text-align:center;
+  }
+  }
+}
+}
+
 
 
 /////////////////////////////////////// Tablet Version ////////////////////////////////

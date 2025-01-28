@@ -68,24 +68,20 @@ const Specialities = () => {
 
   const cardItems = [
     {
-      title: "Card 1",
       text: "Grossesse et Lombalgies : Comment L’Ostéopathie Peut Vous Soulager",
-      image: "CardImage1.jpg",
+      image: "31.png",
     },
     {
-      title: "Card 2",
       text: "3 Exercices Simples pour Réduire les Tensions Pendant la Grossesse",
-      image: "CardImage2.jpg",
+      image: "32.png",
     },
     {
-      title: "Card 3",
       text: "Préparer Son Corps à l’Accouchement avec L’Ostéopathie",
-      image: "CardImage3.jpg",
+      image: "33.png",
     },
     {
-      title: "Card 4",
       text: "Soulager Sciatiques et Reflux : L’Ostéopathie au Service des Futures Mamans",
-      image: "CardImage4.jpg",
+      image: "34.png",
     },
   ];
 
@@ -216,12 +212,11 @@ const Specialities = () => {
             {cardItems.map((item, index) => (
               <div className="card-item" key={index}>
                 <img
-                  src={`/images/${item.image}`}
+                  src={`/icones/Spécialité-femmsEnceinte/${item.image}`}
                   alt={item.title}
                   className="card-image"
                 />
-                <h4>{item.title}</h4>
-                <p>{item.text}</p>
+                <p className="text-pregnancy-card">{item.text}</p>
               </div>
             ))}
           </div>
