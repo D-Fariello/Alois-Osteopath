@@ -88,7 +88,7 @@ const Specialities = () => {
   const questions = [
     "À partir de quel mois de grossesse peut-on consulter ?",
     "Quels maux de grossesse l’ostéopathie peut-elle soulager (sciatique, lombalgies, reflux) ?",
-    "Est-ce sans danger pour le bébé et la future maman ??",
+    "Est-ce sans danger pour le bébé et la future maman ?",
     "L’ostéopathie peut-elle aider à préparer l’accouchement ?",
     "Quels exercices ou conseils un ostéopathe peut-il donner pour soulager les douleurs au quotidien ?",
     "L’ostéopathie peut-elle prévenir ou réduire les risques de fausse couche ?",
