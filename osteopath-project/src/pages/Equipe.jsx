@@ -97,17 +97,20 @@ const Equipe = () => {
           <section className="photos-team-members">
             {teamMembers.map((member) => (
               <div className="photos-team" key={member.id}>
-                <img
-                  className="members-img"
-                  src={member.image}
-                  alt={member.name}
-                />
-                <div>
-                  <p className="members-name">{member.name}</p>
-                  <button onClick={() => setSelectedMember(member)}>
+                <div className="image-container">
+                  <img
+                    className="members-img"
+                    src={member.image}
+                    alt={member.name}
+                  />
+                  <button
+                    className="hidden-button"
+                    onClick={() => setSelectedMember(member)}
+                  >
                     En savoir plus
                   </button>
                 </div>
+                <p className="members-name">{member.name}</p>
               </div>
             ))}
           </section>
