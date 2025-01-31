@@ -47,7 +47,7 @@ const Header = ({
             <a href="#ateliers">Ateliers</a>
           </li>
           <li>
-            <a href="#equipe">Equipe</a>
+            <NavLink to="/equipe">Equipe</NavLink>
           </li>
           <li>
             <a href="#blog">Blog</a>

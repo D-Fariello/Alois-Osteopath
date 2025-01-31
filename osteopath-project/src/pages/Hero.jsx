@@ -35,7 +35,7 @@ const Hero = () => {
       buttonText: "Nous appeler",
       buttonHeader: "Sans rendez-vous 7/7 8H-23H",
       backgroundColor: "#d3606a",
-      buttonLink: "https://www.doctolib.fr/osteopathe/nice/alois-ruetsch",
+      buttonLink: "tel: +330493859184",
     },
   ];
 
@@ -131,7 +131,7 @@ const Hero = () => {
         <section className="additional-info">
           <div className="additional-item">
             <img
-              src="/icones/hero-icones/PNG/Diplome.png"
+              src="/icones/hero-icones/Diplome.png"
               alt="degree"
               className="degree-icon"
             />
@@ -139,7 +139,7 @@ const Hero = () => {
           </div>
           <div className="additional-item">
             <img
-              src="/icones/hero-icones/PNG/Chrono.png"
+              src="/icones/hero-icones/Chrono.png"
               alt="Bienveillance"
               className="heart-icon"
             />
@@ -147,7 +147,7 @@ const Hero = () => {
           </div>
           <div className="additional-item">
             <img
-              src="/icones/hero-icones/PNG/Bienveillance.png"
+              src="/icones/hero-icones/Bienveillance.png"
               alt="timer"
               className="timer-icon"
             />
@@ -155,7 +155,7 @@ const Hero = () => {
           </div>
           <div className="additional-item">
             <img
-              src="/icones/hero-icones/PNG/TrancheAge.png"
+              src="/icones/hero-icones/TrancheAge.png"
               alt="Tranche d'age"
               className="baby-icon"
             />

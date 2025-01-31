@@ -5,7 +5,7 @@ import Footer from "./components/Footer";
 import "./style/main.scss";
 import Hero from "./pages/Hero";
 import Specialities from "./pages/Specialities";
-import ContactForm from "./components/ContactForm";
+import Equipe from "./pages/Equipe";
 
 // Define routes
 const router = createBrowserRouter([
@@ -24,6 +24,16 @@ const router = createBrowserRouter([
       <>
         <Header /> {/* Header for the Specialities page */}
         <Specialities />
+      </>
+    ),
+  },
+
+  {
+    path: "/equipe",
+    element: (
+      <>
+        <Header /> {/* Header for the Equipe page */}
+        <Equipe />
       </>
     ),
   },
