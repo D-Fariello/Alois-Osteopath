@@ -15,6 +15,7 @@ const router = createBrowserRouter([
       <>
         {/*<Header />  Header for the Hero page */}
         <Hero />
+        <Footer />
       </>
     ),
   },
@@ -24,6 +25,7 @@ const router = createBrowserRouter([
       <>
         <Header /> {/* Header for the Specialities page */}
         <Specialities />
+        <Footer />
       </>
     ),
   },
@@ -34,6 +36,7 @@ const router = createBrowserRouter([
       <>
         <Header /> {/* Header for the Equipe page */}
         <Equipe />
+        <Footer />
       </>
     ),
   },
@@ -42,10 +45,7 @@ const router = createBrowserRouter([
 const App = () => {
   return (
     <RouterProvider router={router}>
-      <div className="app">
-        {/* Routes will be rendered automatically */}
-        <Footer />
-      </div>
+      <div className="app">{/* Routes will be rendered automatically */}</div>
     </RouterProvider>
   );
 };
