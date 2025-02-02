@@ -1,47 +1,6 @@
 import React, { useState } from "react";
-
-const teamMembers = [
-  {
-    id: 1,
-    name: "Isabelle Dessailly",
-    image: "images/photo-team.avif",
-  },
-  {
-    id: 2,
-    name: "Atsushi Kitamoto",
-    image: "images/photo-team.avif",
-  },
-  {
-    id: 3,
-    name: "Chloé Nakache",
-    image: "images/photo-team.avif",
-  },
-  {
-    id: 4,
-    name: "Mélisse Guillard",
-    image: "images/photo-team.avif",
-  },
-  {
-    id: 5,
-    name: "Isabelle Dessailly",
-    image: "images/photo-team.avif",
-  },
-  {
-    id: 6,
-    name: "Atsushi Kitamoto",
-    image: "images/photo-team.avif",
-  },
-  {
-    id: 7,
-    name: "Chloé Nakache",
-    image: "images/photo-team.avif",
-  },
-  {
-    id: 8,
-    name: "Mélisse Guillard",
-    image: "images/photo-team.avif",
-  },
-];
+import { Link } from "react-router-dom";
+import teamMembers from "../data/teamData";
 
 const Equipe = () => {
   const [selectedMember, setSelectedMember] = useState(null);
@@ -103,12 +62,9 @@ const Equipe = () => {
                     src={member.image}
                     alt={member.name}
                   />
-                  <button
-                    className="hidden-button"
-                    onClick={() => setSelectedMember(member)}
-                  >
-                    En savoir plus
-                  </button>
+                  <Link to={`/equipe/${member.id}`}>
+                    <button className="hidden-button">En savoir plus</button>
+                  </Link>
                 </div>
                 <p className="members-name">{member.name}</p>
               </div>
@@ -116,7 +72,7 @@ const Equipe = () => {
           </section>
         </section>
 
-        {/* Details Section */}
+        {/* Details Section
         {selectedMember && (
           <section>
             <img src={selectedMember.image} alt={selectedMember.name} />
@@ -126,7 +82,7 @@ const Equipe = () => {
               <button>Prendre rendez-vous</button>
             </div>
           </section>
-        )}
+        )} */}
       </div>
     </div>
   );

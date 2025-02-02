@@ -6,6 +6,7 @@ import "./style/main.scss";
 import Hero from "./pages/Hero";
 import Specialities from "./pages/Specialities";
 import Equipe from "./pages/Equipe";
+import MemberDetail from "./pages/MemberDetail";
 
 // Define routes
 const router = createBrowserRouter([
@@ -36,6 +37,17 @@ const router = createBrowserRouter([
       <>
         <Header /> {/* Header for the Equipe page */}
         <Equipe />
+        <Footer />
+      </>
+    ),
+  },
+
+  {
+    path: "/equipe",
+    element: (
+      <>
+        <Header /> {/* Header for the Member page */}
+        <MemberDetail />
         <Footer />
       </>
     ),
