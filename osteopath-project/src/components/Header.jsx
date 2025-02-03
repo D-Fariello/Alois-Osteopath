@@ -37,8 +37,16 @@ const Header = ({
         <span></span>
         <span></span>
       </div>
+      <div className={`navigation-bar-mobile ${isMenuOpen ? "active" : ""}`}>
+        <ul>
+          <li> test </li>
+          <li>test</li>
+          <li>test</li>
+          <li>test</li>
+        </ul>
+      </div>
       {/* Navigation Bar */}
-      <nav className={`navigation-links ${isMenuOpen ? "active" : ""}`}>
+      <nav className="navigation-links">
         <ul className="nav-bar">
           <li>
             <NavLink to="/specialities">Spécialités</NavLink>
