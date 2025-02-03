@@ -1,10 +1,8 @@
-import React, { useState } from "react";
+import React from "react";
 import { Link } from "react-router-dom";
 import teamMembers from "../data/teamData";
 
 const Equipe = () => {
-  const [selectedMember, setSelectedMember] = useState(null);
-
   return (
     <div className="equipe-page">
       <section className="title-section">
@@ -71,18 +69,6 @@ const Equipe = () => {
             ))}
           </section>
         </section>
-
-        {/* Details Section
-        {selectedMember && (
-          <section>
-            <img src={selectedMember.image} alt={selectedMember.name} />
-            <div>
-              <h3>{selectedMember.name}</h3>
-              <p>{selectedMember.description}</p>
-              <button>Prendre rendez-vous</button>
-            </div>
-          </section>
-        )} */}
       </div>
     </div>
   );

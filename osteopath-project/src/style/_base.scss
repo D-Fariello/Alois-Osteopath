@@ -931,6 +931,81 @@ section.third-values-section {
 
 }
 
+
+/////////////////////////////////////// Member Page ////////////////////////////////
+
+.member-detail {
+  display: flex;
+  padding-top: 8%;
+  position: relative;
+  flex-direction: column;
+  margin-bottom: 5%;
+  
+
+  h1.equipe-title {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background: border-box;
+    background-color: variables.$background-color;
+    font-family: variables.$primary-font-family;
+    font-weight: 300;
+    padding: 0px 20px 15px 20px;
+    color: variables.$primary-text-color;
+    margin-bottom: 0px;
+    margin-top: -5px;
+    font-size: 1.5rem;
+  }
+
+  .description-div {
+    display: flex;
+    padding-left: 30px;
+    padding-right: 30px;
+    align-items: center;
+    background-color: variables.$buttons-background-color;
+
+    .image-member-page {
+      display: flex;
+      height: 200px;
+      border-radius: 50%;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;}
+
+  .details-descritpion {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    align-content: center;
+    padding: 15px 40px;
+}
+
+.member-title{
+  font-family: variables.$primary-font-family;
+  font-weight: 500;
+}
+
+.member-description{
+  font-family: variables.$primary-font-family;
+  font-size: variables.$secondary-font-size;
+  text-align: justify;
+  font-weight: 300;
+}
+}
+
+.button-member-page {
+    @include mixins.button-style;
+    background-color: #b7cec3;
+    color: white;
+    padding: 5px 20px;
+    font-size: 13px;
+  }
+}
+
+
 /////////////////////////////////////// Footer //////////////////////////////////////
 
 
@@ -978,6 +1053,7 @@ p.copyright {
     margin-top: 0;
 }
 }
+
 
 
 /////////////////////////////////////// Tablet Version ////////////////////////////////
@@ -1127,6 +1203,8 @@ p.copyright {
 
     .faq-item {
       display: flex;
+      flex-direction: column;
+      align-items: center;
       width: 90%;
     }
 

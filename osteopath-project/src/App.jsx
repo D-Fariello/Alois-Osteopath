@@ -43,7 +43,7 @@ const router = createBrowserRouter([
   },
 
   {
-    path: "/equipe",
+    path: "/equipe/:id",
     element: (
       <>
         <Header /> {/* Header for the Member page */}
