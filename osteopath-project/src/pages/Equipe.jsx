@@ -38,16 +38,16 @@ const Equipe = () => {
               <h2 className="equipe-title-2">Notre Equipe</h2>
             </section>
             <div className="team-members-div">
-              <h3 className="h3-team">Rencontrez notre équipe</h3>
+              <h3 className="h3-team">
+                Des experts certifiés D.O. pour répondre à tous vos besoins
+              </h3>
               <p className="text-meet-the-team">
-                Chez Pôle Ostéo, notre équipe de 8 ostéopathes passionnés met
-                son expertise et sa bienveillance au service de votre bien-être.
-                Chaque praticien est spécialisé dans des domaines spécifiques –
-                grossesse, sport, mobilité, et bien plus – pour offrir une prise
-                en charge complète et adaptée à vos besoins. Ensemble, nous
-                partageons une mission commune : vous accompagner à chaque étape
-                de votre parcours santé, avec des soins personnalisés et une
-                écoute attentive.
+                Notre équipe d’ostéopathes met à votre service une expertise
+                variée et complémentaire pour vous offrir des soins adaptés à
+                vos besoins spécifiques. Chacun de nos praticiens possède une
+                spécialité qui lui permet d'accompagner différents profils,
+                qu’il s’agisse de femmes enceintes, de sportifs, de bébés, ou de
+                personnes souhaitant préserver leur mobilité.
               </p>
             </div>
           </div>

@@ -23,10 +23,19 @@ const MemberDetail = () => {
         <div className="details-descritpion">
           <h2 className="member-title">{member.name}</h2>
           <p className="member-description">{member.description}</p>
-          <button className="button-member-page">Prendre rendez-vous</button>
+          <a
+            href={member.appointmentLink}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <button className="button-member-page">Prendre rendez-vous</button>
+          </a>
         </div>
       </div>
-      <h3>{member.specialization}</h3>
+      <section className="specialization">
+        <h3 className="specialization-title">Mes spécialités</h3>
+        <p className="member-specialization">{member.specialization}</p>
+      </section>
     </div>
   );
 };
