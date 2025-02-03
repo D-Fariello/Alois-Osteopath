@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import { Form } from "react-router-dom";
 
 const ContactForm = () => {
-  // Optional: Handle form state (e.g., capturing user input)
   const [formData, setFormData] = useState({
     name: "",
     lastName: "",

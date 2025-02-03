@@ -57,7 +57,7 @@ const Header = ({
             <NavLink to="/#faq-section">FAQ</NavLink>
           </li>
           <li>
-            <a href="#a-propos">À propos</a>
+            <NavLink to="/a-propos">À propos</NavLink>
           </li>
           <li>
             <NavLink to="/#contact">Contact</NavLink>

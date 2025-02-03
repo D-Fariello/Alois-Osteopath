@@ -7,6 +7,7 @@ import Hero from "./pages/Hero";
 import Specialities from "./pages/Specialities";
 import Equipe from "./pages/Equipe";
 import MemberDetail from "./pages/MemberDetail";
+import Apropos from "./components/Apropos";
 
 // Define routes
 const router = createBrowserRouter([
@@ -48,6 +49,16 @@ const router = createBrowserRouter([
       <>
         <Header /> {/* Header for the Member page */}
         <MemberDetail />
+        <Footer />
+      </>
+    ),
+  },
+  {
+    path: "/a-propos",
+    element: (
+      <>
+        <Header /> {/* Header for the A propos page */}
+        <Apropos />
         <Footer />
       </>
     ),
