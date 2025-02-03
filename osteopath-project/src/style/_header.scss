@@ -1,0 +1,61 @@
+@use "variables";
+@use "mixins";
+
+////////////// Header /////////////
+
+.page-heading {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: variables.$background-color;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    padding: 20px 0px 0px 0px;
+  
+    img.main-nav-logo-image {
+      height: 50px;
+    }
+  
+    ul.nav-bar {
+      display: flex;
+      list-style: none;
+      gap: 30px;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      text-decoration: none;
+      margin-right: 28px;
+      margin-left: -20px;
+  
+      a {
+        font-family: variables.$secondary-font-family;
+        text-decoration: none;
+        color: variables.$primary-text-color;
+        font-size: 15px;
+      }
+      :hover {
+        color: variables.$hover-text-color;
+      }
+  
+      .logo-Image img {
+        max-height: 45px;
+      }
+    }
+  
+    .button-nav,
+    .button-header {
+      @include mixins.button-style;
+      background-color: #b7cec3;
+      color: white;
+      padding: 5px 20px;
+      font-size: 13px;
+    }
+  
+    .button-nav a {
+      text-decoration: none;
+      color: white;
+      display: inline-block;
+    }
+  }

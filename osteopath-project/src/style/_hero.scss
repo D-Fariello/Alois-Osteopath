@@ -1,0 +1,345 @@
+
+////// Use /////
+
+@use "variables";
+@use "mixins";
+
+///////////////////////////////////// HERO PAGE ///////////////////////////
+
+////////////// Carrousel /////////////
+
+///////// TEXT /////////
+
+.hero-title {
+    color: variables.$secondary-text-color;
+    font-family: "Inter";
+    font-weight: 400;
+  }
+  
+  .hero-subtitle {
+    color: variables.$secondary-text-color;
+    font-family: "Inter";
+    margin: 2% 5%;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+  }
+  
+  ////////////// Carrousel Image //////////////
+  
+  .carousel-container {
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    height: 350px;
+  }
+  
+  .carousel-slide {
+    width: 100%;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.5s ease, visibility 0.5s ease,
+      background-color 0.5s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    box-sizing: border-box;
+    text-align: center;
+    position: absolute;
+    left: 0;
+    top: 40px;
+    height: 350px;
+  }
+  
+  /* Slide active */
+  .carousel-slide.active {
+    opacity: 1;
+    visibility: visible;
+  }
+  
+  /* Slide inactive */
+  .carousel-slide.inactive {
+    opacity: 0;
+    visibility: hidden;
+  }
+  
+  /// Arrows ///
+  
+  .carousel-arrow {
+    position: absolute;
+    top: 60%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    background-color: transparent;
+    padding: 10px 15px;
+    cursor: pointer;
+    z-index: 1000;
+  }
+  
+  .carousel-arrow.left {
+    left: 5%;
+  }
+  
+  .carousel-arrow.right {
+    right: 5%;
+  }
+  
+  /// Dots ///
+  .carousel-dots {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    bottom: 7%;
+  }
+  
+  .dot {
+    height: 8px;
+    width: 8px;
+    margin: 0 5px;
+    background-color: lightgray;
+    border-radius: 50%;
+    display: inline-block;
+    cursor: pointer;
+  }
+  
+  .dot.active {
+    background-color: #fbf9f9;
+  }
+  
+  ////////////// Buttons //////////////
+  
+  button.btn.btn-primary {
+    @include mixins.button-style;
+    margin-top: 30px;
+  }
+  
+  .button-red {
+    color: #d3606a !important;
+  }
+  
+  //////////////// Banner Carrousel ////////////
+  
+  .general-info {
+    width: 100%;
+    box-sizing: border-box;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    top: 50%;
+    height: 20px;
+    background-color: variables.$cards-backgroud-color;
+    padding: 25px;
+    gap: 100px;
+  
+    .info-item {
+      display: flex;
+      gap: 10px;
+      align-items: center;
+      color: variables.$icons-color;
+      font-family: variables.$primary-font-family;
+      font-size: variables.$secondary-font-size;
+    }
+  }
+  
+  ////////// Additional info  Section //////////
+  
+  section.additional-info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5%;
+    gap: 80px;
+  }
+  
+  .additional-item {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  img.degree-icon,
+  .heart-icon,
+  .timer-icon,
+  .baby-icon,
+  .adults-icon,
+  .foot-icon {
+    height: 100px;
+    border: none;
+    background-color: variables.$cards-backgroud-color;
+    padding: 35px 25px;
+    border-radius: 100%;
+    color: variables.$second-background-color;
+    font-size: 40px;
+    margin-bottom: 15px;
+  }
+  
+  .additional-text {
+    font-family: variables.$primary-font-family;
+    color: black;
+    font-size: variables.$secondary-font-size;
+    margin-bottom: 15px;
+  }
+  
+  ////////// FAQ Section //////////
+  
+  h2.faq-title {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background: border-box;
+    background-color: variables.$second-background-color;
+    font-family: variables.$primary-font-family;
+    font-weight: 500;
+    padding: 20px;
+    color: white;
+    margin-bottom: 0px;
+  }
+  
+  .faq-items {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: variables.$cards-backgroud-color;
+    margin-top: 0;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  
+    .faq-question {
+      display: flex;
+      flex-direction: row-reverse;
+      justify-content: center;
+      align-items: center;
+      background: border-box;
+      background-color: white;
+      border-radius: 20px 20px;
+      margin-bottom: 13px;
+      padding: 15px;
+      gap: 20px;
+      width: 900px;
+      font-family: variables.$primary-font-family;
+      font-size: variables.$secondary-font-size;
+    }
+  
+    .faq-answer {
+      display: flex;
+      flex-direction: row-reverse;
+      justify-content: center;
+      align-items: center;
+      background: border-box;
+      background-color: white;
+      border-radius: 20px 20px;
+      margin-bottom: 13px;
+      padding: 15px;
+      gap: 20px;
+      width: 900px;
+      text-align: center;
+      font-family: variables.$primary-font-family;
+      font-size: variables.$buttons-font-size;
+    }
+  
+    svg {
+      color: variables.$second-background-color;
+      cursor: pointer;
+    }
+  }
+  
+  ////////// Contact Form Section //////////
+  
+  h2.contact-us-title {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background: border-box;
+    background-color: variables.$second-background-color;
+    font-family: variables.$primary-font-family;
+    font-weight: 500;
+    padding: 20px;
+    color: white;
+    margin-bottom: 0px;
+    margin-top: 0;
+    font-size: 1.5rem;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+  
+    .names,
+    .contacts {
+      display: flex;
+      flex-wrap: wrap;
+    }
+  
+    .input-last-name,
+    .input-name,
+    .input-email,
+    .phone-number,
+    .message {
+      display: flex;
+      gap: 20px;
+      background-color: variables.$cards-backgroud-color;
+      border-radius: 20px 20px;
+      border: none;
+      color: black;
+      padding-top: 10px;
+      padding-left: 20px;
+      padding-bottom: 10px;
+      margin-top: 15px;
+      font-family: variables.$primary-font-family;
+      font-size: variables.$secondary-font-size;
+      width: 290px;
+    }
+  
+    input#last-name,
+    #name,
+    #email,
+    #phone-number,
+    #message {
+      width: 90%;
+    }
+  
+    .message {
+      height: 200px;
+      margin-bottom: 20px;
+      width: 47%;
+    }
+  
+    input#last-name,
+    #name,
+    #email,
+    #phone-number,
+    #message {
+      border: none;
+      background-color: transparent;
+    }
+  
+    .form-button {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+  
+      .submit-button {
+        @include mixins.button-style;
+        background-color: #b7cec3;
+        display: flex;
+        color: white;
+        padding: 5px 20px;
+        font-size: 15px;
+        margin-bottom: 40px;
+      }
+    }
+  }

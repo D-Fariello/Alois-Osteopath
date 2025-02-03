@@ -1,0 +1,53 @@
+////// Use /////
+
+@use "variables";
+@use "mixins";
+
+/////////////////////////////////////// FOOTER //////////////////////////////////////
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    background-color: variables.$second-background-color;
+  
+    .container {
+      display: flex;
+      flex-direction: row-reverse;
+      justify-content: center;
+      background-color: variables.$second-background-color;
+  
+      .social-icons {
+        display: flex;
+        font-size: 40px;
+        align-items: center;
+        gap: 100px;
+        flex-wrap: wrap;
+  
+        a.icon-instagram,
+        .icon-linkedin,
+        .icon-facebook {
+          color: variables.$secondary-text-color;
+        }
+      }
+    }
+  
+    h4.follow-us {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: variables.$secondary-text-color;
+      font-family: variables.$primary-font-family;
+      font-weight: 300;
+      font-size: 20px;
+    }
+  
+    p.copyright {
+      color: variables.$secondary-text-color;
+      display: flex;
+      justify-content: flex-end;
+      padding-right: 20px;
+      font-size: 13px;
+      margin-top: 0;
+    }
+  }
+  
