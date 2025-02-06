@@ -1,6 +1,4 @@
 import React, { useEffect } from "react";
-import { MapContainer, TileLayer } from "react-leaflet";
-import "leaflet/dist/leaflet.css";
 
 const Apropos = () => {
   useEffect(() => {
@@ -11,16 +9,6 @@ const Apropos = () => {
     <section className="apropos-container">
       <section className="Location">
         <h2>Location</h2>
-        <MapContainer
-          center={[48.866667, 2.333333]}
-          zoom={15}
-          style={{ height: "400px", width: "100%" }}
-        >
-          <TileLayer
-            url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-            attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-          />
-        </MapContainer>
       </section>
       <section className="tarifs">
         <h2>Tarifs</h2>

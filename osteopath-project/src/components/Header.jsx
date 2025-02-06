@@ -12,7 +12,7 @@ const Header = ({
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const toggleMenu = () => {
-    setIsMenuOpen((prev) => !prev);
+    setIsMenuOpen(!isMenuOpen);
   };
 
   return (
@@ -38,11 +38,13 @@ const Header = ({
         <span></span>
       </div>
       <div className={`navigation-bar-mobile ${isMenuOpen ? "active" : ""}`}>
-        <ul>
-          <li> test </li>
-          <li>test</li>
-          <li>test</li>
-          <li>test</li>
+        <ul className="list-burger-menu">
+          <li>Spécialités</li>
+          <li>Ateliers</li>
+          <li>Equipe</li>
+          <li>Blog</li>
+          <li>À propos</li>
+          <li>Contact</li>
         </ul>
       </div>
       {/* Navigation Bar */}
