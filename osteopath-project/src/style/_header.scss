@@ -58,6 +58,10 @@
       color: white;
       display: inline-block;
     }
+
+    .navigation-bar-mobile {
+      display: none;
+  }
   }
 
   /////////////////////////////////////// TABLET VERSION ////////////////////////////////
@@ -142,8 +146,14 @@
         gap: 10px;
         text-align: center;
         cursor: pointer;
+
+        a {
+          font-family: "Inter";
+          text-decoration: none;
+          color: black;
+          font-size: 15px;
+      }
     }
-    
     }
 
     .navigation-links {

@@ -325,3 +325,106 @@
     }
   }
   
+
+  /////////////////////////////////////// Mobile Version ////////////////////////////////
+
+@media (max-width: 768px) {
+
+  .specialities-page {
+    display: flex;
+    padding-top: 25%;
+    position: relative;
+    flex-direction: column;
+  
+
+  
+
+.pregnancy-section {
+  .pregnancy-section-image-container {
+    display: flex;
+    justify-content: center;
+    background-color: #b7cec3;
+    height: 200px;
+   
+    img.pregnancy-image {
+      height: 130px;
+  }
+  }
+
+  .pregnancy-section-bullets {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #fbf9f9;
+    border-radius: 35px;
+    margin-left: 13px;
+    margin-right: 13px;
+    flex-wrap: wrap;
+    align-content: center;
+}
+
+.bullet-categories {
+  display: flex;
+  flex-direction: column;
+}
+
+}
+
+.values-section {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+
+  .values-first-div{
+    .icons-values-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+  }
+  }
+}
+
+.second-values-section {
+
+  h3.second-values-title {
+    text-align: center;
+}
+  .second-values-div {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.cards-container {
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+}
+}
+
+
+
+section.third-values-section {
+  display: flex;
+    background-color: #fbf9f9;
+    padding-bottom: 5%;
+    margin-bottom: -34px;
+
+  .third-values-div{
+    .third-values-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+    }
+  } 
+}
+}

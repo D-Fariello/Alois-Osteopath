@@ -39,12 +39,28 @@ const Header = ({
       </div>
       <div className={`navigation-bar-mobile ${isMenuOpen ? "active" : ""}`}>
         <ul className="list-burger-menu">
-          <li>Spécialités</li>
-          <li>Ateliers</li>
-          <li>Equipe</li>
-          <li>Blog</li>
-          <li>À propos</li>
-          <li>Contact</li>
+          <li>
+            <NavLink to="/specialities">Spécialités</NavLink>
+          </li>
+          <li>
+            <a href="#ateliers">Ateliers</a>
+          </li>
+          <li>
+            <NavLink to="/equipe">Equipe</NavLink>
+          </li>
+          <li>
+            <a href="#blog">Blog</a>
+          </li>
+
+          <li>
+            <NavLink to="/#faq-section">FAQ</NavLink>
+          </li>
+          <li>
+            <NavLink to="/a-propos">À propos</NavLink>
+          </li>
+          <li>
+            <NavLink to="/#contact">Contact</NavLink>
+          </li>
         </ul>
       </div>
       {/* Navigation Bar */}
