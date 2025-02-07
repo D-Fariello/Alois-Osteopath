@@ -107,7 +107,6 @@
   }
   
   section.pregnancy-section {
-    padding-bottom: 12%;
   
     .pregnancy-section-image-container {
       display: flex;
@@ -129,7 +128,7 @@
       background-color: variables.$buttons-background-color;
       border-radius: 35px;
       margin-left: 30px;
-      position: absolute;
+      position: relative;
       margin-top: -60px;
       margin-right: 30px;
     }
@@ -175,7 +174,6 @@
   section.values-section {
     .values-title-div {
       display: flex;
-      padding-top: 60px;
       font-family: variables.$primary-font-family;
       justify-content: center;
   
@@ -248,7 +246,7 @@
       flex-direction: column;
       flex-wrap: wrap;
       align-content: center;
-      align-items: flex-start;
+      align-items: center;
     }
   
     h3.second-values-title {
@@ -259,8 +257,11 @@
   
     .cards-container {
       display: flex;
-      flex-direction: row;
-      align-items: center;
+          flex-direction: row;
+          align-items: center;
+          flex-wrap: wrap;
+          align-content: center;
+          justify-content: center;
   
       img.card-image {
         height: 125px;
@@ -326,20 +327,145 @@
   }
   
 
+/////////////////////////////////////// Mobile 2 Version ////////////////////////////////
+
+@media (min-width: 769px) and (max-width: 1024px){
+
+  .specialities-page {
+     h1.specialities-title {
+    margin-top: 17px;
+} 
+
+  .values-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+ .second-values-section {
+    .second-values-div {
+      display: flex;
+      align-content: center;
+      align-items: center;
+      flex-direction: column;
+      justify-content: center;
+  }
+    .cards-container {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      flex-wrap: wrap;
+      justify-content: center;
+  }
+  } 
+}
+}
+/////////////////////////////////////// Mobile 2 Version ////////////////////////////////
+
+@media (min-width: 601px) and (max-width: 768px){
+  .specialities-page{
+
+    h1.specialities-title {
+      margin-top: 15px;
+    }
+
+    .values-section {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      align-items: center;
+      margin-top: 0px;
+  }
+ 
+
+  .pregnancy-section {
+
+    padding-bottom: 0px;
+
+    h2.pregnancy-section-title {
+      font-size: 15px;
+    }
+
+    .pregnancy-section-bullets {
+      position: relative;
+  }
+   
+    .pregnancy-section-image-container {
+      display: flex;
+      justify-content: center;
+      margin-top: 2%;
+      background-color: #b7cec3;
+      height: 250px;
+
+     img.pregnancy-image {
+        height: 200px;
+  }
+  
+}
+  } 
+
+  .values-section {
+    .values-title-div {
+  
+    padding-top:0px;
+     
+  }
+    .values-first-div {
+      .icons-values-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+    }
+  }
+  .second-values-section {
+
+    h3.second-values-title {
+      text-align: center;
+  }
+    .second-values-div {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .cards-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  }
+  }
+}
+}
+
+
   /////////////////////////////////////// Mobile Version ////////////////////////////////
 
-@media (max-width: 768px) {
+@media (max-width: 600px) {
 
   .specialities-page {
     display: flex;
-    padding-top: 25%;
     position: relative;
     flex-direction: column;
-  
 
+    h1.specialities-title {
+      margin-top: 40px;
+    }
   
-
 .pregnancy-section {
+
+  h2.pregnancy-section-title {
+    font-size: 13px;
+    margin-left: 1%;
+    margin-right: 1%;
+  }
+
   .pregnancy-section-image-container {
     display: flex;
     justify-content: center;
@@ -362,6 +488,7 @@
     margin-right: 13px;
     flex-wrap: wrap;
     align-content: center;
+    position: relative;
 }
 
 .bullet-categories {
@@ -376,6 +503,12 @@
   flex-direction: column;
   flex-wrap: wrap;
   align-items: center;
+ 
+
+.values-title-div {
+    padding-top:0px; 
+   
+}
 
   .values-first-div{
     .icons-values-container {
