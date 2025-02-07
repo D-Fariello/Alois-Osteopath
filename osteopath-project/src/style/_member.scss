@@ -97,3 +97,48 @@
       }
     }
   }
+
+/////////////////////////////////////// Tablet Version ////////////////////////////////
+
+@media (min-width: 769px) and (max-width: 1024px){
+  .member-detail {
+  
+    .title-section {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-top: 33px;
+  }}
+}
+
+  /////////////////////////////////////// Mobile Version ////////////////////////////////
+
+@media (max-width: 768px) {
+
+.member-detail {
+  
+  .title-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 29px;
+}
+
+  h1.equipe-title {
+    margin-top: 15px;
+}
+
+  .description-div {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding-top: 20px;
+
+.image-member-page {
+   
+    height: 144px;
+
+}}
+}}
