@@ -58,6 +58,7 @@
       text-align: center;
       margin-left: 1%;
       margin-right: 1%;
+      position: relative;
     }
   }
 
@@ -205,7 +206,7 @@
 
 /////////////////////////////////////// TABLET VERSION ////////////////////////////////
 
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (min-width: 601px) and (max-width: 1024px) {
   .equipe-page {
     h1.equipe-title {
       display: flex;
@@ -225,9 +226,31 @@
   }
 }
 
+/////////////////////////////////////// Mobile 2 Version ////////////////////////////////
+
+@media (min-width: 501px) and (max-width: 768px){
+
+  .equipe-page {
+    h1.equipe-title {
+      margin-top: 30px;
+    }
+  .title-section-2 {
+      display: flex;
+      margin-top: 44%;
+      flex-direction: column;
+
+      h2.equipe-title-2 {
+        display: flex;
+        margin-top: 12%;
+    }
+  }
+  }
+}
+
+
 /////////////////////////////////////// Mobile Version ////////////////////////////////
 
-@media (max-width: 768px) {
+@media (max-width: 500px) {
   .equipe-page {
     h1.equipe-title {
       margin-top: 55px;
